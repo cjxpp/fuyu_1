@@ -1,0 +1,483 @@
+.main {
+  width: 100%;
+  height: 360px;
+}
+.main p {
+  width: 100%;
+  height: 100%;
+}
+.main img {
+  width: 100%;
+  height: 100%;
+}
+.visa_content {
+  margin: 20px auto;
+  width: 1160px;
+}
+.visa_content h1 {
+  text-align: center;
+}
+.visa_content .content_item ul {
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.visa_content .content_item li {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  color: #8a8a8a;
+}
+.visa_content .content_item li::after {
+  content: '';
+  display: block;
+  height: 15px;
+  width: .5px;
+  position: absolute;
+  top: 55%;
+  left: -11%;
+  transform: translateY(-50%);
+  background-color: #acacac;
+}
+.visa_content .content_item li:nth-child(1)::after {
+  content: '';
+  background: none;
+}
+.content_vip {
+  width: 1160px;
+  margin: 10px auto;
+}
+.content_vip ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.content_vip ul a {
+  display: block;
+  width: 280px;
+  height: 190px;
+}
+.content_vip ul li {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #8a8a8a;
+}
+.content_vip ul li img {
+  width: 100%;
+  height: 100%;
+}
+.content_vip ul li .content_con {
+  position: absolute;
+  bottom: 0;
+  padding: 5px 10px;
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.898));
+}
+.content_vip li .content_con p {
+  color: white;
+  font-size: 14px;
+}
+.content_vip li .content_con p:nth-child(1) {
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 70%;
+}
+.content_vip li .content_con p:nth-child(2) {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  float: right;
+  font-size: 17px;
+}
+.content_vip li .content_con p:nth-child(2) span {
+  font-size: 8px;
+}
+.content_vip .cont_vipimg {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 50px;
+  height: 50px;
+}
+
+.visa {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 300px;
+  background-color: #f9f9f9;
+}
+.visa h1 {
+  text-align: center;
+}
+.visa .visa_item {
+  position: relative;
+  margin: 50px auto;
+  width: 1160px;
+}
+.visa_item .item_asia {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.visa .visa_region {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.visa  .visa_region p {
+  float: left;
+  margin: 20px;
+}
+.item_asia a {
+  display: block;
+  margin-top: 20px;
+  width: 280px;
+  height: 65px;
+}
+.item_asia a:hover {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 3px #3333331f;
+}
+.item_asia a li {
+  padding: 10px 5px 0 5px;
+  width: 100%;
+  height: 100%;
+}
+.item_asia a li p {
+  float: left;
+  margin-right: 10px;
+  width: 62px;
+  height: 42px;
+}
+.item_asia a li p img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.item_asia a li dt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: #333333;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.item_asia a li dd {
+  color: #fe9500;
+  font-weight: bold;
+}
+.item_asia a li dd span {
+  font-size: 13px;
+}
+.visa_l {
+  background: none;
+  height: 200px;
+}
+.visa_l a li dd i {
+  margin-left: 5px;
+  color: #ff6600;
+}
+.visa_l .visa_region p {
+  color: #5e5e5e;
+  text-decoration: none;
+}
+
+.visa_no {
+  background: none;
+  width: 1160px;
+  margin: auto;
+}
+
+.visa_no p {
+  color: #8a8a8a;
+  font-size: 16px;
+}
+.visa_region .visa_asia {
+  color: #099;
+  text-decoration: underline;
+}
+.visa_no p:hover {
+  color: #099;
+}
+
+.visa_no .visa_noitem {
+  margin-top: 80px;
+}
+.visa_no .visa_noitem ul {
+  display: flex;
+  justify-content: space-between;
+}
+.visa_no .visa_noitem a {
+  display: block;
+  position: relative;
+  width: 186px;
+  height: 130px;
+  overflow: hidden;
+
+}
+.visa_no .visa_noitem li,
+.visa_no .visa_noitem li p,
+.visa_no .visa_noitem li img {
+  width: 100%;
+  height: 100%;
+}
+
+.visa_no .visa_noitem p:nth-child(2) {
+  transition: .5s;
+}
+.visa_no .visa_noitem strong {
+  position: absolute;
+  left: -200px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .5s;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.visa_no .visa_noitem li:hover p:nth-child(2) {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #23232397;
+}
+.visa_no .visa_noitem li:hover strong {
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: white;
+}
+
+  /*签证评估*/
+#ma_ax{
+  width: 1160px;
+  height: 240px;
+  margin: 0px auto;
+}
+#ma_ax h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+.pinggu_a {
+    font-size: 14px;
+    color: rgb(161, 165, 168);
+    float: left;
+    line-height: 100px;
+    margin-left: 10px;
+    margin-left: -125px;
+}
+.ceshi_i {
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    line-height: 80px;
+    margin-left: 10px;
+}
+.ia_q{
+    width: 350px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 201, 201);
+    margin-right: 20px;
+    margin-top: 5px;
+    float: left;
+}
+/*评估测试按钮*/
+.chaxun_io{
+    font-size: 18px;
+    margin: 10px 10px;
+    line-height: 50px;
+}
+.pgcs_a{
+    width: 100px;
+    height: 40px;
+    background-color: #13af7e;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.pgcs_a:hover{
+    background-color: rgb(90, 120, 165);
+}
+.pgcs_a a{
+    text-decoration: none;
+    color: aliceblue;
+    line-height: 40px;
+    margin-left: 18px;
+}
+/*使领馆部分*/
+.weusz{
+    width: 370px;
+    height: 150px;
+    margin-top: 5px;
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(194, 189, 189);
+    float: left;
+}
+.quanbu_io{
+    margin-left: 100px;
+}
+.quanbu_io a{
+    text-decoration: none;
+    color: #333333;
+}
+.quanbu_io a:hover{
+    border-bottom: 1px rgb(9, 132, 247) solid;
+}
+/*搜索框*/
+.quyu_a{
+    width: 250px;
+    height: 30px;
+    border: 1px solid rgb(168, 166, 166);
+    border-radius: 4px;
+    margin-left: 10px;
+    color: rgb(153, 153, 156);
+}
+.suosou_kua{
+    width: 73px;
+    height: 30px;
+    background-color: #13af7e;
+    border: 0;
+    color: white;
+    border-radius: 4px;
+}
+/*搜索框下的6个超链接*/
+.diming_hh{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.diming_hh li{
+    float: left;
+    margin-right: 10px;
+}
+.diming_hh li a{
+    text-decoration: none;
+    color: rgb(22, 133, 238);
+}
+.diming_hh li a:hover{
+    border-bottom: 1px solid;
+}
+/*预定*/
+.yuding_a{
+    font-size: 18px;
+    line-height: 50px;
+    margin-left: 10px;
+}
+.qqaaq_a{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(197, 206, 206);
+    border-radius: 50px;
+    margin-left: 10px;
+}
+.qqaaq_a img{
+    width: 35px;
+    height: 35px;
+}
+/*撒大大阿松大打大苏打*/
+.qqaaq_aa{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(197, 206, 206);
+    margin-top: 20px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+.qqaaq_aa img{
+    width: 35px;
+    height: 35px;
+}
+.fudong{
+    float: left;
+    margin-top: -35px;
+    margin-left: 50px;
+}
+.lvyou_as {
+  width: 90px;
+  height: 20px;
+  font-size: 10px;
+  white-space: nowrap;
+  margin-left: 50px;
+  margin-top: -10px;
+  float: left;
+}
+.tt_a{
+    width: 399px;
+    height: 170px;
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(172, 170, 170);
+    float: left;
+}
+.tt_a a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(0, 132, 255);
+}
+.tt_a a:hover{
+    border-bottom: 1px solid rgb(0, 132, 255);
+}
+
+#kuaile_k{
+  width: 1160px;
+  height: 220px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(160, 160, 160);
+  margin: 20px auto;
+}
+.kuaile_d{
+  float: left;
+  width: 550px;
+  height: 200px;
+  margin: 10px 10px; 
+}
+
+
+.kuaile_d span{
+  font-size: 10px;
+}
+.kuaile_d a{
+  text-decoration: none;
+  color: black;
+}
+#q{
+  color: #13af7e;
+  font-size: 18px;
+}
+.kuaile_d span{
+  margin: 5px;
+}
+#duiqi{
+  margin-left:36px;
+}
+.yi_io{
+  margin-top: 20px;
+  float: left;
+  margin-left: 10px;
+}
+#io{
+  color: rgb(0, 162, 255);
+  font-size: 18px;
+  margin-top: 20px;
+  float: left;
+  margin-left: 10px;
+
+}
+
+
+
+
+
+
+

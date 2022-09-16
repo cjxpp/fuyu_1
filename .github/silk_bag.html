@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>富游锦囊_旅游指南路书下载_自助游攻略 - 富游锦囊</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3036624_2000l15qp8m.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3426322_0bzu5hchnbw8.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="shortcut icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
+    <style>
+        #bei {
+            background-color: rgb(255, 255, 255);
+        }
+
+        #yi {
+            width: 100%;
+            height: 60px;
+            background-color: rgba(43, 255, 0, 0.767);
+        }
+
+        #er {
+            width: 100%;
+            height: 20px;
+            background-color: rgb(255, 255, 255);
+            background-image: url(img/特别.png);
+            background-repeat: no-repeat;
+            background-size: 1160px 110px;
+            border-right: 10px solid white;
+        }
+
+
+        /* 专题 */
+        #he {
+            width: 1156px;
+            height: 103px;
+            background-color: rgb(251, 251, 251);
+            box-shadow: 0 4px 3px 3px rgba(0, 0, 0, 0.1);
+            /* 盒子阴影 */
+            position: relative;
+            margin-left: 0px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+
+        #wu {
+            width: 1155px;
+            height: 2600px;
+            background-color: rgb(255, 255, 255);
+            margin: 0 auto;
+        }
+
+        #liu {
+            width: 100%;
+            height: 120px;
+            background-color: #323232;
+            margin-top: 15px;
+            border-top: 3px solid lawngreen;
+        }
+
+
+        .ll {
+            float: left;
+            text-indent: 5px;
+            width: 180px;
+            height: 103px;
+            color: aliceblue;
+            background-color: rgb(1, 1, 1);
+
+        }
+
+        /* 导航栏 */
+        .zi {
+            float: left;
+            font-size: 30px;
+            position: relative;
+            left: 30px;
+            top: 27px;
+        }
+
+        h2 {
+            line-height: 80px;
+            float: left;
+        }
+
+        h2 a {
+            padding: 0 20px;
+            color: #000;
+        }
+
+        h2 a:hover {
+            color: aliceblue;
+            background-color: #63e0aa;
+            border-radius: 13px;
+        }
+
+        .zier {
+            float: left;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            position: relative;
+            left: -40px;
+            top: 60px;
+        }
+
+        .lj {
+            font-weight: bold;
+            font-size: 15px;
+            width: 880px;
+            margin-left: 90px;
+            float: left;
+            margin-top: 15px;
+        }
+
+        .lj ul li {
+            float: left;
+        }
+
+        .lj ul li a {
+            display: block;
+            height: 40px;
+            line-height: 35px;
+            margin: 0 30px;
+            color: black;
+            padding: 0 10px;
+            border-radius: 15px;
+
+        }
+
+        .lj ul li a:hover {
+            background-color: #63e0aa;
+            color: aliceblue;
+        }
+
+        .aa {
+            width: 55px;
+            height: 15px;
+        }
+
+        h1 {
+
+            text-indent: 10px;
+            font-size: 30px;
+            color: aliceblue;
+            /* position: absolute; */
+        }
+
+        p {
+            font-size: 15px;
+            color: aliceblue;
+        }
+
+
+
+        .ye {
+            font-size: 30px;
+            height: 20px;
+            line-height: 10px;
+            width: 700px;
+        }
+
+        /* 表框 */
+        li {
+            list-style: none;
+        }
+
+        .hezi {
+            width: 100%;
+        }
+
+        /* .focus .roll ul::after {
+                    content: '';
+                height: 0;
+                line-height: 0;
+                display: block;
+                visibility: hidden;
+                clear: both;
+                overflow: hidden;
+        } */
+
+        .hezi>div {
+            float: left;
+            width: 365px;
+            height: 250px;
+            background-color: rgb(251, 250, 250);
+            margin-left: 15px;
+
+            margin-bottom: 15px;
+            border-radius: 5px;
+            /* 盒子圆角 */
+            box-shadow: 0 4px 3px 3px rgba(0, 0, 0, 0.1);
+            /* 盒子阴影 */
+            transition: .3s all;
+        }
+
+        /* 图片大小 */
+        .box2 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+        }
+
+
+        .box2 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+            /* overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical; */
+        }
+
+        .hezi>div:hover {
+            width: 370px;
+        }
+
+        .box3 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box3 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box4 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box4 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box5 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box5 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box6 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box6 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box7 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box7 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box8 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box8 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box9 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box9 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box10 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box10 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box11 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box11 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box12 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box12 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box13 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box13 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box14 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box14 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box15 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box15 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box16 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box16 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box17 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box17 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box18 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box18 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box19 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box19 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box20 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box20 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box21 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box21 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box22 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box22 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box23 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box23 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box24 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box24 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box25 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box25 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box26 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box26 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box27 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box27 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        .box28 ul li img {
+            width: 100%;
+            height: 190px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .box28 ul li h5 {
+            line-height: 23px;
+            margin: 1px 0px 0 10px;
+        }
+
+        /* 轮播图 */
+        .san {
+            position: relative;
+            width: 1160px;
+            height: 400px;
+            margin: auto;
+            border-radius: 15px;
+            background-color: rgb(171, 180, 34);
+        }
+
+        .san img {
+            position: absolute;
+            left: 0;
+            border-radius: 15px;
+        }
+
+        .prev {
+            /* 左侧按钮 */
+            position: absolute;
+            left: 0;
+            /* 绝对定位的盒子垂直居中 */
+            top: 50%;
+            width: 40px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            line-height: 45px;
+            color: #fff;
+            font-size: 40px;
+            text-decoration: none;
+            /* border-radius: 15px; */
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        .next {
+            /* 右侧按钮 */
+            position: absolute;
+            right: 0;
+            /* 绝对定位的盒子垂直居中 */
+            top: 50%;
+            width: 40px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.3);
+            text-align: center;
+            line-height: 45px;
+            color: #fff;
+            font-size: 40px;
+            text-decoration: none;
+            /* border-radius: 15px; */
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+
+        /* 底部 */
+        .footer {
+            position: relative;
+            margin-top: 30px;
+            padding-top: 30px;
+            width: 100%;
+            height: 120px;
+            background-color: #323232;
+            text-align: center;
+        }
+
+        .jj a {
+            margin: 0 2px;
+            color: #c0c0c0;
+            font: bold 14px '微软雅黑';
+        }
+
+        .footer p:last-child a {
+            font-size: 12px;
+            color: #c0c0c0;
+        }
+
+        /* 顶部 */
+        .nav {
+            padding: 0 30px;
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            /* background: linear-gradient(180deg,rgba(0,0,0,.3) 10%,transparent); */
+            background-color: #323232;
+        }
+
+        .nav ul li {
+            float: left;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        .nav ul li a {
+            height: 25px;
+            line-height: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav .fr {
+            font-size: 15px;
+            float: right;
+        }
+
+        .nav .fr li {
+            margin: 0 10px;
+        }
+
+        .nav .fr .iconfont {
+            line-height: 60px;
+        }
+
+        .nav .fr li:nth-of-type(n+6) {
+            font-size: 16px;
+        }
+
+        #er {
+            width: 1160px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bei">
+        <div id="yi">
+            <nav>
+                <div class="nav">
+                    <ul class="fl">
+                        <li><a href="./index.html"><img src="./img/k001.png" alt=""></a></li>
+                        <li><a href="./destination.html">目的地</a></li>
+                        <li><a href="./hotel.html">特价酒店</a></li>
+                        <li><a href="./local.html">当地玩乐</a></li>
+                        <li><a href="./customized.html">私人定制</a></li>
+                        <li><a href="./drive.html">租车自驾</a></li>
+                        <li class="pull_down"><a href="./visa.html">富游商城 <i
+                                    class="iconfont icon-tx-fill-sanjiaoxing-copy"></i></a>
+                            <dl>
+                                <a href="./railway.html">
+                                    <dt><i class="iconfont icon-qiche"></i>铁路</dt>
+                                </a>
+                                <a href="./visa.html">
+                                    <dd><i class="iconfont icon-qianzheng"></i>签证</dd>
+                                </a>
+                                <a href="./forum.html">
+                                    <dd><i class="iconfont icon-dangdiwanle1"></i>社区</dd>
+                                </a>
+                                <a href="./wedding.html">
+                                    <dd><i class="iconfont icon-hunsha"></i>婚纱旅拍</dd>
+                                </a>
+                                <a href="./strategy.html">
+                                    <dd><i class="iconfont icon-gonglve"></i>攻略</dd>
+                                </a>
+                            </dl>
+                        </li>
+                    </ul>
+                    <ul class="fr">
+                        <ul>
+                            <li>
+                                <a href="./silk_bag.html"><i class="iconfont icon-changyongtubiao_yonghusousuo"></a></i>
+                                <input type="text" placeholder="土耳其">
+                            </li>
+                            <li><a href="https://login.taobao.com/"><i class="iconfont icon-taobao"></i></a></li>
+                            <li><a href="https://uni.mp.qq.com/login?url=https%3A%2F%2Funi.mp.qq.com%2F"><i
+                                        class="iconfont icon-QQ"></i></a></li>
+                            <li><a href="https://wx.qq.com/"><i class="iconfont icon-weixin"></i></a></li>
+                            <li><a
+                                    href="https://login.sina.com.cn/signup/signin.php?r=https%3A%2F%2Fapi.weibo.com%2Foauth2%2Fauthorize%3Ftime%3D1648974148157%26sign%3Db7b9d8d098a9a397f0eea918f797643d%26client_id%3D1118290340%26redirect_uri%3Dhttp%253A%252F%252Flogin.qyer.com%252Flogin.php%253Faction%253Dweibo%26response_type%3Dcode%26refer%3Dwww.qyer.com%26state%3DPASSPORT000062495943e0654%26display%3Ddefault%26ismobile%3D0%26with_offical_account%3D1"><i
+                                        class="iconfont icon-xinlangweibo"></i></a></li>
+                            <li><a href="./login.html">登录</a></li>
+                            <li><a href="./register.html">注册</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="er"></div>
+        <div class="san">
+            <img src="./img/8001.jpg" alt="">
+        </div>
+        <div id="wu">
+            <div id="he">
+                <div class="ll">
+                    <div class="zi">专题</div>
+                    <div class="zier">SPECIAL</div>
+                    <div class="zier">SUBJEC</div>
+                </div>
+                <div class="lj">
+                    <div class="q">
+                        <h2>
+                            <a href="#">全部</a>
+                        </h2>
+                    </div>
+                    <ul>
+                        <li><a href="#">年轻计划</a></li>
+                        <li><a href="#">地球研习社</a></li>
+                        <li><a href="#">Q-stoy</a></li>
+                        <li><a href="#">去也</a></li>
+                        <li><a href="#">榜单</a></li>
+                        <li><a href="#">上瘾团</a></li>
+                        <li><a href="#">三天两夜精选</a></li>
+                        <li><a href="#">旅人博物馆</a></li>
+                        <li><a href="#">旅行便利店</a></li>
+                        <li><a href="#">富游体检管</a></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="hezi">
+                <div class="box21">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8021.png"></a>
+                            <h5>
+                                体验欧洲风情，欧洲小镇-河边渔人村，朴素的国外友人，非常热情
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box2">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="img/8002.png"></a>
+                            <h5>“德天瀑布位于广西自治区崇左市大新县硕龙镇德天村,是中过河越南边境处的归春和的上游。”</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box3">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8003.png"></a>
+                            <h5>北海银滩是北海市的著名的旅游景点，位于广西壮族自治区北海市银海区，占地面积约38平方公里。</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box4">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8004.png"></a>
+                            <h5>桂林漓江风景区：世界自然遗产地，国家AAAAA级旅游景区，国家重点风景名胜区</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box5">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8005.png"></a>
+                            <h5>西藏，简称“藏”，首府拉萨市，位于中华人民共和国西南地区，是中国五个少数民族自治区之一。</h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box6">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8006.png"></a>
+                            <h5>九寨沟：世界自然遗产、国家重点风景名胜区国家AAAAA级旅游景区、国家级自然保护区
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box7">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="img/8007.png"></a>
+                            <h5>
+                                上海迪士尼所营造的卡通世界深受国内外的小伙伴们喜欢里面的卡通人物和娱乐设施每年都吸引着不少游客们去游玩。
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box8">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8008.png"></a>
+                            <h5>
+                                凤凰古城位于湖南省湘西土家族苗族自治州凤凰县，总面积约10平方千米，是国家AAAA级景区。
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box9">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8009.png"></a>
+                            <h5>
+                                三娘湾，广西十佳景区之一，国家4A级景区，是中华白海豚的故乡位于广西壮族自治区钦州市犀牛脚镇南面。
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box10">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8010.png"></a>
+                            <h5>
+                                黄姚古镇是一个有九百多年历史的古镇，目前尚保留有较为完整的明清建筑
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box11">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8011.png"></a>
+                            <h5>
+                                漓江的特点概括为清、奇、巧、变四个字，主要景点概括为一江、两洞、三山。一江（漓江）、两洞（芦笛岩、七星岩
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box12">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8012.png"></a>
+                            <h5>
+                                漓江像一条青绸绿带，盘绕在万点峰峦之间，奇峰夹岸，碧水萦回，削壁垂河青山浮水风光旖旎，犹如一幅百里画卷。
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box13">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8013.png"></a>
+                            <h5>
+                                丽江，云南省辖地级市，位于青藏高原东南缘，滇西北高原，金沙江中游,是国际知名旅游城市国家历史文化名城
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box14">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8014.png"></a>
+                            <h5>
+                                重庆古镇，被誉为“乌江画廊核心景区和璀璨明珠”，有千年历史
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box15">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8015.png"></a>
+                            <h5>
+
+                                长城位于中国的河北、北京、天津、山西、陕西、甘肃、新疆等这15个省区市。
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box16">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8016.png"></a>
+                            <h5>
+                                泰国旅游景点曼谷是世界一线城市是泰国首都和最大城市，别名“天使之城”。
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box17">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8017.png"></a>
+                            <h5>
+                                “北京故宫”。
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box18">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8018.png"></a>
+                            <h5>
+                                爱琴海是希腊半岛东部的一个蓝色系海洋，南抵克里特岛，属地中海的一部分。
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box19">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8019.png"></a>
+                            <h5>
+                                梵净山（Mount Fanjing），得名于“梵天净土”，位于贵州省铜仁市的印江、江口等。
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box20">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8020.png"></a>
+                            <h5>
+                                荷兰阿姆斯特丹,河流,运河
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box22">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8022.png"></a>
+                            <h5>
+                                意大利五渔村
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box23">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8023.png"></a>
+                            <h5>
+                                沂山风景区又名沂山古称海岱、海岳为中国东海向内陆的第一座高山，有“大海东来第一山”之说。
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box24">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8024.png"></a>
+                            <h5>
+                                雪乡旅游风景区是国家AAAA级旅游景区，位于黑龙江省牡丹江市西南部，黑龙江大海林重点国有林管理局施业区内。
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box25">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8025.png"></a>
+                            <h5>
+                                西藏圣象天门
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box26">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8026.png"></a>
+                            <h5>
+                                湖南张家界
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box27">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8027.png"></a>
+                            <h5>
+                                唯一”能和九寨沟媲美的地方，就在云南丽江，风景惊艳值得一游
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box28">
+                    <ul>
+                        <li><a href="./ho_details.html"><img src="./img/8028.png"></a>
+                            <h5>
+                                云南丽江丽江古城
+                            </h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="liu">
+            <footer>
+                <div class="footer">
+                    <p class="jj">
+                        <a href=" "><span>|&nbsp;&nbsp;富游简介</span></a>
+                        <a href="#"><span>|&nbsp;&nbsp;合作伙伴</span></a>
+                        <a href="#"><span>|&nbsp;&nbsp;加入我们</span></a>
+                        <a href="#"><span>|&nbsp;&nbsp;新手上路</span></a>
+                        <a href="#"><span>|&nbsp;&nbsp;使用帮助</span></a>
+                        <a href="#"><span>|&nbsp;&nbsp;网站地图</span></a>
+                        <a href="#"><span>|&nbsp;&nbsp;会员条款</span></a>
+                        <a href="#"><span>|&nbsp;&nbsp;社区指南</span></a>
+                        <a href="#"><span>|&nbsp;&nbsp;版权声明</span></a>
+                        <a href="#"><span>|&nbsp;&nbsp;免责声明</span></a>
+                    </p>
+                    <p>
+                        <a>2004-2022 富游网 qyer.com All rights reserved. Version v5.57 京ICP备12003524号<img
+                                src="./img/1129.png" alt="">
+                            京公网安备11010502041090 京ICP证140673号营业执照经营许可证</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    </div>
+</body>
+
+</htm>

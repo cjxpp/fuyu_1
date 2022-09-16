@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3303358_hgq5vpzyxqs.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3036624_2000l15qp8m.css">
+    <link rel="shortcut icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3426322_0bzu5hchnbw8.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <title>【富游网】租车自驾详情</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .wai {
+        width: 100%;
+        background: #f5f5f5;
+    }
+
+    /* 头部 */
+    .yi {
+        width: 100%;
+        height: 103px;
+        background-color: #f9f9f9;
+    }
+
+    .yi_qw {
+        float: left;
+        width: 285px;
+        height: 28px;
+        line-height: 28px;
+        padding-left: 0;
+        position: relative;
+        z-index: 11002;
+        font-size: 10px;
+        color: #f5f5f5;
+        border-width: 0 1px;
+        padding-right: 24px;
+    }
+
+    .wa {
+        float: right;
+        width: 20px;
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .yi_er {
+        width: 482px;
+        height: 28px;
+        float: right;
+    }
+
+    .yi_e {
+        float: left;
+        display: inline;
+    }
+
+    .yi_r {
+        display: block;
+        padding: 0 10px;
+        height: 28px;
+        line-height: 28px;
+        font-size: 12px;
+        color: #fff;
+    }
+
+    .yi_t {
+        float: left;
+    }
+
+    .yi_t a {
+        margin-left: 15px;
+        color: #fff;
+    }
+
+    .yi_t a:hover {
+        color: red;
+    }
+
+    .yi_s {
+        float: left;
+        display: inline;
+    }
+
+    .yi_di {
+        height: 28px;
+        line-height: 28px;
+        margin-left: 5px;
+        color: #f5f5f5;
+        font-size: 10px;
+        background: #034692;
+    }
+
+    .yi_di a {
+        color: rgb(255, 255, 255);
+    }
+
+    .yi_di a:hover {
+        color: red;
+    }
+
+    .yi_ga {
+        position: relative;
+        left: 10px;
+        height: 28px;
+        line-height: 28px;
+        float: left;
+        padding: 0;
+        font-style: normal;
+        color: #fff;
+        opacity: .4;
+    }
+
+    .yi_tp {
+        padding-right: 10px;
+    }
+
+    .yi_wx {
+        margin: -2px 4px 0 0;
+        display: inline-block;
+        width: 18px;
+        height: 15px;
+        background-position: -10px 0;
+    }
+
+    .yi_io a {
+        height: 28px;
+        line-height: 28px;
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .yi_io a:hover {
+        color: red;
+    }
+
+    .yi_gaa {
+        position: relative;
+        left: 220px;
+        top: -28px;
+        height: 28px;
+        line-height: 28px;
+        float: left;
+        padding: 0;
+        font-style: normal;
+        color: #fff;
+        opacity: .4;
+    }
+
+    .yi_gaaa {
+        position: relative;
+        left: 250px;
+        top: -28px;
+        height: 28px;
+        line-height: 28px;
+        float: left;
+        padding: 0;
+        font-style: normal;
+        color: #fff;
+        opacity: .4;
+    }
+
+
+    .yi_wwq {
+        position: relative;
+        left: -30px;
+        top: 0px;
+        float: left;
+        display: inline;
+    }
+
+    .yi_wwq a {
+        height: 28px;
+        line-height: 28px;
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .yi_wwq a:hover {
+        color: red;
+    }
+
+    .jia_ti {
+        position: relative;
+        left: 260px;
+        top: -28px;
+        float: left;
+        display: inline;
+    }
+
+    .yi_fw a {
+        height: 28px;
+        line-height: 28px;
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+    }
+
+    .yi_fw a:hover {
+        color: red;
+    }
+
+    .yi_fuw {
+        position: relative;
+        left: 260px;
+        top: -28px;
+        float: left;
+        display: inline;
+    }
+
+    /* 第二行 */
+    .er {
+        width: 1160px;
+        height: 74px;
+        margin: 0 auto;
+        line-height: 74px;
+    }
+
+    .er_yi {
+        float: left;
+        margin: 30px 0 0;
+    }
+
+    .tu {
+        display: inline-block;
+        border: 0;
+        width: 142px;
+        height: 48px;
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        vertical-align: top;
+        background-color: transparent;
+        background-image: url(./img/dr001.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+    }
+
+    .er_er {
+        float: left;
+        margin: 15px 0 0;
+    }
+
+    .er_san {
+        width: 848px;
+        float: right;
+        height: 48px;
+    }
+
+    .er_jin {
+        position: relative;
+        bottom: -1px;
+    }
+
+    .er_a {
+        font-size: 18px;
+        position: relative;
+        top: 20px;
+        float: left;
+        display: inline;
+    }
+
+    .er_b {
+        font-size: 18px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        float: left;
+        display: inline;
+    }
+
+    .er_b a {
+        color: #000;
+    }
+
+    .er_b a:hover {
+        color: red;
+    }
+
+    .er_a a {
+        border-bottom-color: #e00346;
+        color: #e00346;
+    }
+
+    .er_c {
+        font-size: 18px;
+        position: relative;
+        top: 20px;
+        left: 50px;
+        float: left;
+        display: inline;
+    }
+
+    .er_c a {
+        color: #000;
+    }
+
+    .er_c a:hover {
+        color: red;
+    }
+
+    .er_d {
+        font-size: 18px;
+        position: relative;
+        top: 20px;
+        left: 80px;
+        float: left;
+        display: inline;
+    }
+
+    .er_d a {
+        color: #000;
+    }
+
+    .er_d a:hover {
+        color: red;
+    }
+
+    .er_e {
+        font-size: 18px;
+        position: relative;
+        top: 20px;
+        left: 115px;
+        float: left;
+        display: inline;
+    }
+
+    .er_e a {
+        color: #000;
+    }
+
+    .er_e a:hover {
+        color: red;
+    }
+
+    .er_f {
+        font-size: 18px;
+        position: relative;
+        top: 20px;
+        left: 145px;
+        float: left;
+        display: inline;
+    }
+
+    .er_f a {
+        color: #000;
+    }
+
+    .er_f a:hover {
+        color: red;
+    }
+
+    .er_g {
+        font-size: 18px;
+        position: relative;
+        top: 20px;
+        left: 180px;
+        float: left;
+        display: inline;
+    }
+
+    .er_g a {
+        color: #000;
+    }
+
+    .er_g a:hover {
+        color: red;
+    }
+
+    .er_h {
+        font-size: 18px;
+        position: relative;
+        top: 20px;
+        left: 210px;
+        float: left;
+        display: inline;
+    }
+
+    .er_h a {
+        color: #000;
+    }
+
+    .er_h a:hover {
+        color: red;
+    }
+
+    /* 第三个盒子 */
+    .san {
+        width: 1190px;
+        height: 99px;
+        background-color: #deecff;
+        position: relative;
+        top: 20px;
+        padding: 20px 0px 0px;
+        margin: 0 auto;
+    }
+
+    .san_yi {
+        float: left;
+        width: 180px;
+        height: 63px;
+        padding: 0px 16px 0px 16px;
+    }
+
+    .qu {
+
+        display: block;
+        text-align: left;
+        color: #666;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .man {
+        position: relative;
+        display: block;
+        padding: 10px 30px 11px 10px;
+        width: 140px;
+        height: 42px;
+        background: #fff;
+    }
+
+    .man1 {
+        float: left;
+        position: relative;
+        display: block;
+        padding: 10px 30px 11px 10px;
+        width: 150px;
+        height: 42px;
+        background: #fff;
+    }
+
+    .man1 input {
+        border: 0 none;
+        width: 100%;
+        height: 19px;
+        font-size: 14px;
+        line-height: 1.5;
+        outline: 0;
+        background-color: #fff;
+        color: #333;
+    }
+
+    .man2 input {
+        border: 0 none;
+        width: 50%;
+        height: 42px;
+        font-size: 14px;
+        line-height: 1.5;
+        outline: 0;
+        background-color: #fff;
+        color: #333;
+    }
+
+    .man input {
+        border: 0 none;
+        width: 100%;
+        height: 19px;
+        font-size: 14px;
+        line-height: 1.5;
+        outline: 0;
+        background-color: #fff;
+        color: #333;
+    }
+
+    .zifu {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        margin-top: -3px;
+    }
+
+    .zifu em {
+        border-width: 5px 5px 0;
+        border-top-color: #d8d8d8;
+        top: 2px;
+    }
+
+    .zifu span {
+        border-width: 5px px 5px 0;
+        border-top-color: #fff;
+    }
+
+    .san_er {
+        float: left;
+        margin-right: 16px;
+        width: 180px;
+    }
+
+    .san_er1 {
+        float: left;
+        margin-right: 16px;
+        width: 180px;
+        position: relative;
+        left: 150px;
+    }
+
+    .san_san {
+        float: left;
+        margin-right: 16px;
+        width: 180px;
+    }
+
+    .zhou {
+        position: relative;
+        left: 90px;
+        top: -22px;
+        z-index: inherit;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        font-family: inherit;
+        color: #999;
+    }
+
+    .zhou txte {
+        float: none;
+    }
+
+    .shij {
+        position: relative;
+        top: -42px;
+        left: 73px;
+        float: right;
+        margin-left: 1px;
+        width: 100px;
+        cursor: pointer;
+        padding-right: 20px;
+    }
+
+    .shij input {
+        border: 0 none;
+        width: 100%;
+        height: 42px;
+        line-height: 42px;
+        font-size: 14px;
+        line-height: 1.5;
+        outline: 0;
+        background-color: #fff;
+        color: #333;
+    }
+
+    .tian {
+        position: relative;
+        top: -70px;
+        left: 226px;
+        float: left;
+        margin: 0 10px;
+    }
+
+    .tian span {
+        position: relative;
+        top: 30px;
+        display: inline-block;
+        width: 38px;
+        font-size: 12px;
+        box-sizing: border-box;
+        padding: 1px 2px;
+        color: #666;
+        border-bottom: 1px solid #666;
+        text-align: center;
+    }
+
+    .san_si {
+        position: relative;
+        left: 85px;
+        float: left;
+        margin-right: 16px;
+        width: 180px;
+    }
+
+    .anniu {
+        float: right;
+        position: relative;
+        left: -50px;
+        top: -3px;
+        width: 90px;
+        height: 63px;
+    }
+
+    .anniu button {
+        display: block;
+        margin: 23px 0 0;
+        border-width: 0;
+        border-color: transparent;
+        padding: 0;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: inherit;
+        text-decoration: none;
+        white-space: nowrap;
+        word-wrap: normal;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        outline: 0;
+        background-image: none;
+        background-color: #5390ed;
+        border-radius: 3px;
+        user-select: none;
+        box-sizing: content-box;
+    }
+
+    /* 第二个盒子 */
+    .si {
+        width: 1190px;
+        height: 477px;
+        background-color: #f4f4f4;
+        margin: 0px auto;
+    }
+
+    /* 第二个 */
+    .si_er {
+        width: 1190px;
+        height: 369px;
+        margin: 10px auto;
+        background-color: #fff;
+    }
+
+    .si_san {
+        padding: 60px 40px;
+        margin-bottom: 10px;
+        background-color: #fff;
+    }
+
+    .si_si {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .si_si h5 {
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+
+    .si_wu {
+        background-image: url(./img/dr003.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 110px;
+        width: 110px;
+        margin: 0 auto;
+    }
+
+    .si_liu {
+        color: red;
+    }
+
+    .si_ba {
+        position: relative;
+        top: -50px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1;
+        color: #4e7cdd;
+        width: 200px;
+        padding: 13px 0;
+        border: 1px solid #4e7cdd;
+        border-radius: 2px;
+        margin: 32px auto 0;
+        cursor: pointer;
+    }
+
+    /* 第五个盒子 */
+    .wu {
+        width: 100%;
+        height: 134px;
+        margin: 10px auto;
+        border-top: 1px solid #e1e1e1;
+        padding: 40px 0 20px;
+        background: #fff;
+    }
+
+    .wu_yi {
+        margin: 0 auto 10px;
+        width: 1190px;
+    }
+
+    .wu_yi i {
+        float: left;
+        margin-right: 10px;
+        font-size: 60px;
+        line-height: 1;
+        color: #5390ed;
+    }
+
+    .wu_yi li {
+        display: inline;
+        float: left;
+        width: 20%;
+        font-size: 0;
+    }
+
+    .tr {
+        text-align: left;
+    }
+
+    .tr h5 {
+        font-size: 18px;
+        color: #333;
+    }
+
+    .tr p {
+        font-size: 12px;
+        color: #333;
+    }
+
+    /* 底部 */
+    .dibu {
+        width: 100%;
+        height: 460px;
+        position: relative;
+        width: 100%;
+        min-width: 1190px;
+        font-size: 12px;
+        background-color: #2C3547;
+        clear: both;
+        padding-top: 60px;
+    }
+
+    .dibu_yi {
+        display: block;
+        width: 1190px;
+        height: 178px;
+        clear: both;
+        margin: 0 auto;
+    }
+
+    .dibu_er {
+        float: left;
+        margin: 0px;
+        width: 150px
+    }
+
+    .dibu_er h3 {
+        line-height: 42px;
+        position: relative;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 12px;
+    }
+
+    .dibu_er li {
+        list-style: none;
+        margin-right: 25px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .dibu_er li a {
+        font-size: 14px;
+        color: #9CA4B6;
+    }
+
+    .di_san {
+        width: 365px;
+        float: right;
+    }
+
+    .di_gefu {
+        color: #fff;
+        font-family: arial;
+        font-size: 13px;
+        margin-right: 15px;
+        text-align: right;
+    }
+
+    .di_gefu h4 {
+        line-height: 42px;
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+
+    .rx {
+        line-height: 42px;
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+
+    .tile {
+        margin-bottom: 11px;
+        line-height: 22px;
+        font-size: 19px;
+        position: relative;
+        left: -120px;
+    }
+
+    .tile1 {
+        margin-bottom: 11px;
+        line-height: 22px;
+        font-size: 15px;
+        position: relative;
+        left: -115px;
+    }
+
+    .tile1 span {
+        color: #9CA4B6;
+    }
+
+    .tile span {
+        color: #9CA4B6;
+    }
+
+    .di_gefu a {
+        width: 240px;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid #9CA4B6;
+        border-radius: 2px;
+        transition: background .3s;
+    }
+
+    /* 底部二 */
+    .dibu_er1 {
+        font-size: 0;
+        width: 1190px;
+        height: 78px;
+        margin: 30px auto 0;
+        padding: 30px 0 0px;
+        border-top: 1px solid #3F4A60;
+        overflow: hidden;
+    }
+
+    .dibu_er1 h3 {
+        display: inline-block;
+        line-height: 42px;
+        padding-right: 20px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .dibu_ze {
+        float: left;
+    }
+
+    .dibu_ze>li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .dibu_tup {
+        background: url(./img/dr04.png) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        width: 88px;
+        height: 38px;
+    }
+
+    .dibu_tup1 {
+        background: url(./img/dr05.png) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        width: 88px;
+        height: 38px;
+    }
+
+    .dibu_tup2 {
+        background: url(./img/dr06.png) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        width: 88px;
+        height: 38px;
+    }
+
+    .dibu_tup3 {
+        background: url(./img/dr07.png) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        width: 88px;
+        height: 38px;
+    }
+
+    .dibu_tup4 {
+        background: url(./img/dr08.png) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        width: 88px;
+        height: 38px;
+    }
+
+    .dibu_tup5 {
+        background: url(./img/dr09.png) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        width: 88px;
+        height: 38px;
+    }
+
+    .dibu_tup6 {
+        background: url(./img/dr10.png) no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        width: 88px;
+        height: 38px;
+    }
+
+    /* 第三个 */
+    .dibu_san {
+        border-top: 1px solid #3F4A60;
+        color: #9CA4B6;
+        margin: 20px auto 0;
+        overflow: hidden;
+        padding-bottom: 60px;
+        padding-top: 20px;
+        width: 1190px;
+        text-align: center;
+    }
+
+    .dibu_san a {
+        color: #9CA4B6;
+    }
+</style>
+
+<body>
+    <div class="wai">
+    	<nav>
+            <div class="nav">
+                <ul class="fl">
+                    <li><a href="./index.html"><img src="./img/k001.png" alt=""></a></li>
+                    <li><a href="./destination.html">目的地</a></li>
+                    <li><a href="./hotel.html">特价酒店</a></li>
+                    <li><a href="./local.html">当地玩乐</a></li>
+                    <li><a href="./customized.html">私人定制</a></li>
+                    <li><a href="./drive.html">租车自驾</a></li>
+                    <li class="pull_down"><a href="./visa.html">富游商城 <i
+                                class="iconfont icon-tx-fill-sanjiaoxing-copy"></i></a>
+                        <dl>
+                            <a href="./railway.html">
+                                <dt><i class="iconfont icon-qiche"></i>铁路</dt>
+                            </a>
+                            <a href="./visa.html">
+                                <dd><i class="iconfont icon-qianzheng"></i>签证</dd>
+                            </a>
+                            <a href="./forum.html">
+                                <dd><i class="iconfont icon-dangdiwanle1"></i>社区</dd>
+                            </a>
+                            <a href="./wedding.html">
+                                <dd><i class="iconfont icon-hunsha"></i>婚纱旅拍</dd>
+                            </a>
+                            <a href="./strategy.html">
+                                <dd><i class="iconfont icon-gonglve"></i>攻略</dd>
+                            </a>
+                        </dl>
+                    </li>
+                </ul>
+                <ul class="fr">
+                    <ul>
+                        <li>
+                            <a href="./silk_bag.html"><i class="iconfont icon-changyongtubiao_yonghusousuo"></a></i>
+                            <input type="text" placeholder="土耳其">
+                        </li>
+                        <li><a href="https://login.taobao.com/"><i class="iconfont icon-taobao"></i></a></li>
+                        <li><a href="https://uni.mp.qq.com/login?url=https%3A%2F%2Funi.mp.qq.com%2F"><i
+                                    class="iconfont icon-QQ"></i></a></li>
+                        <li><a href="https://wx.qq.com/"><i class="iconfont icon-weixin"></i></a></li>
+                        <li><a
+                                href="https://login.sina.com.cn/signup/signin.php?r=https%3A%2F%2Fapi.weibo.com%2Foauth2%2Fauthorize%3Ftime%3D1648974148157%26sign%3Db7b9d8d098a9a397f0eea918f797643d%26client_id%3D1118290340%26redirect_uri%3Dhttp%253A%252F%252Flogin.qyer.com%252Flogin.php%253Faction%253Dweibo%26response_type%3Dcode%26refer%3Dwww.qyer.com%26state%3DPASSPORT000062495943e0654%26display%3Ddefault%26ismobile%3D0%26with_offical_account%3D1"><i
+                                    class="iconfont icon-xinlangweibo"></i></a></li>
+                        <li><a href="./login.html">登录</a></li>
+                        <li><a href="./register.html">注册</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+        <div class="yi">
+            <div class="er">
+                <div class="er_yi">
+                    <a href="" class="tu"></a>
+                </div>
+                <div class="er_san">
+                    <ul class="er_jin">
+                        <li class="er_a">
+                            <a href="">境外租车</a>
+                        </li>
+                        <li class="er_b">
+                            <a href="">闪租</a>
+                        </li>
+                        <li class="er_c"> <a href="">门票.玩乐</a></li>
+                        <li class="er_d"> <a href="">驾照国际翻译</a></li>
+                        <li class="er_e"> <a href="">租车保险</a></li>
+                        <li class="er_f"> <a href="">免费gps</a></li>
+                        <li class="er_g"> <a href="">用户分享</a></li>
+                        <li class="er_h"> <a href="">租租车APP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="san">
+            <form action="">
+                <div class="san_bi">
+                    <div class="san_yi">
+                        <p class="qu">取车城市</p>
+                        <div class="man">
+                            <input type="text" value="曼谷 - Bangkok">
+                            <i class="zifu">
+                                <em></em>
+                                <span></span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="san_er">
+                        <p class="qu">还车城市</p>
+                        <div class="man">
+                            <input type="text" value="曼谷 - Bangkok">
+                            <i class="zifu">
+                                <em></em>
+                                <span></span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="san_san">
+                        <p class="qu">当地取车时间</p>
+                        <div class="man1">
+                            <input type="text" value="2022-04-18">
+                            <i class="zifu">
+                                <em></em>
+                                <span></span>
+                            </i>
+                            <div class="zhou">
+                                <div class="txte">周一</div>
+                            </div>
+
+                        </div>
+                        <div class="shij">
+                            <input type="text" value="10:00">
+                        </div>
+                        <div class="tian">
+                            <span>
+                                7天
+                            </span>
+                        </div>
+                    </div>
+                    <div class="san_si">
+                        <p class="qu">当地还车</p>
+                        <div class="man1">
+                            <input type="text" value="2022-04-25">
+                            <i class="zifu">
+                                <em></em>
+                                <span></span>
+                            </i>
+                            <div class="zhou">
+                                <div class="txte">周一</div>
+                            </div>
+
+                        </div>
+                        <div class="shij">
+                            <input type="text" value="10:00">
+                        </div>
+                    </div>
+                    <div class="san_er1">
+                        <p class="qu">驾驶员年龄</p>
+                        <div class="man2">
+                            <input type="text" value="30-65周岁">
+                            <i class="zifu">
+                                <em></em>
+                                <span></span>
+                            </i>
+                        </div>
+                    </div>
+                    <div class="anniu">
+                        <button><a href="drive.html" style="color: white;">搜索</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="si">
+            <div class="si_er">
+                <div class="si_san">
+                    <div class="si_si">
+                        <div class="si_wu"> </div>
+                        <h5>
+                            抱歉，距离取车时间
+                            <span class="si_liu">
+                                不足24小时
+                            </span>
+                            ，请更改取车时间并重新搜索。
+                        </h5>
+                    </div>
+                </div>
+                <div class="si_qi">
+                    <a href="./drive.html">
+                        <div class="si_ba">
+                            更改日期
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="wu">
+            <div class="wu_yi">
+                <ul>
+                    <li>
+                        <i class="iconfont icon-envelope-full">tu</i>
+                        <div class="tr">
+                            <h5>中国驾照通全球</h5>
+                            <p>
+                                免费送驾照国际翻译认证件<br>通行近200国（日韩除外）
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="">tu</i>
+                        <div class="tr">
+                            <h5>全球车源尽掌握</h5>
+                            <p>
+                                20万+门店实时比价<br>价格比车行官网更优
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="">tu</i>
+                        <div class="tr">
+                            <h5>精准导航随心行</h5>
+                            <p>
+                                探途手机离线导航<br>全程免费零流量
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="">tu</i>
+                        <div class="tr">
+                            <h5>超级境外租车保险</h5>
+                            <p>
+                                保车保人保旅程<br>手机拍照理赔快
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="">tu</i>
+                        <div class="tr">
+                            <h5>24小时中英文客服</h5>
+                            <p>
+                                专业顾问时刻待命<br>轻松解决麻烦事
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dibu">
+            <div class="dibu_yi">
+
+                <div class="dibu_er">
+                    <h3>关于</h3>
+                    <ul>
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">加入我们</a></li>
+                        <li><a href="">媒体报道</a></li>
+                    </ul>
+                </div>
+                <div class="dibu_er">
+                    <h3>条款</h3>
+                    <ul>
+                        <li><a href="">隐私条款</a></li>
+                        <li><a href="">用户协议</a></li>
+                        <li><a href="">信息处置制度</a></li>
+                        <li><a href="">租车规则</a></li>
+                    </ul>
+                </div>
+                <div class="dibu_er">
+                    <h3>帮助</h3>
+                    <ul>
+                        <li><a href="">客服中心</a></li>
+                        <li><a href="">互助问答</a></li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">出游安全提示</a></li>
+                    </ul>
+                </div>
+                <div class="di_san">
+                    <div class="di_gefu">
+                        <h4 class="rx">客服热线</h4>
+                        <p class="tile">
+                            <span class="sub">中国内地拨打：</span>
+                            1010-1020
+                        </p>
+                    </div>
+                    <div class="di_gefu">
+                        <p class="tile1">
+                            <span class="sub">其他地区拨打：</span>
+                            +86-10-6064-1387
+                        </p>
+                        <a href="">在线客服</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dibu_er1">
+                <h3>
+                    资质证书
+                </h3>
+                <ul class="dibu_ze">
+                    <li>
+                        <a href="">
+                            <i class="dibu_tup">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="dibu_tup1">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="dibu_tup2">
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="dibu_tup3">
+                            </i>
+                        </a>
+                    </li>
+                    <li> <a href="">
+                            <i class="dibu_tup4">
+                            </i>
+                        </a></li>
+                    <li> <a href="">
+                            <i class="dibu_tup5">
+                            </i>
+                        </a></li>
+                    <li> <a href="">
+                            <i class="dibu_tup6">
+                            </i>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="dibu_san">
+                <p>
+                    © 2011-2022 zuzuche.com. All Rights Reserved.&nbsp;&nbsp; 广州力挚网络科技有限公司&nbsp;&nbsp;版权所有
+
+                    <a href="">营业执照</a>&nbsp;&nbsp;
+                    <a href="">粤ICP备11007328号</a>&nbsp;&nbsp;
+                    <a href="">
+                        <img src="./img/dr1011.png" alt="" class="dibu_ww">
+                    </a>
+                    粤公网安备 44010602000444号
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

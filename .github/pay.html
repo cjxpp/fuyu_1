@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>【富游网】支付平台</title>
+	<link rel="stylesheet" href="./css/public.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_3036624_2000l15qp8m.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_3426322_0bzu5hchnbw8.css">
+	<link rel="shortcut icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
+	<style type="text/css">
+		.cjx {
+			width: auto;
+			height: 100%;
+		}
+
+		.cjx2 {
+			height: 80px;
+			margin-bottom: 20px;
+			background-color: #ffffff;
+		}
+
+		.cjx3 {
+			width: 930px;
+			height: 80px;
+			margin: 0 auto;
+		}
+
+		.cjx3 img {
+			margin: 20px;
+		}
+
+		.cjx4 {
+			width: 250px;
+			height: 180px;
+			font-size: 29px;
+			line-height: 73px;
+			margin: 18px;
+		}
+
+		.cjx4 a {
+			color: #0bb485;
+		}
+
+		.yxy {
+			width: 100%;
+		}
+
+		.cjx5 {
+			width: 890px;
+			height: 160px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			border: solid 1px #bcbcbc;
+		}
+
+		.yxy2 {
+			height: 120px;
+			border-bottom: solid 1px #d0d0d0;
+			background-color: #fafafa;
+		}
+
+		.yxy3 {
+			font-size: 18px;
+			height: 80px;
+			background-color: #fafafa;
+			line-height: 34px;
+			padding: 10px;
+		}
+
+		.yxy3 a {
+			font-size: 14px;
+			color: #AAAAAA;
+		}
+
+		.yxy4 {
+			width: 899px;
+			height: 40px;
+			text-indent: 1em;
+			padding: 10px;
+			font-size: 13px;
+			color: #ff5500;
+		}
+
+		.b {
+			float: right;
+			background-color: #fafafa;
+			width: 130px;
+			height: 40px;
+			font-size: 16px;
+			text-indent: 0.5em;
+			border-left: solid 1px #AAAAAA;
+		}
+
+		.b a {
+			font-size: 13px;
+			color: #000000;
+		}
+
+		.cjx6 {
+			width: 890px;
+			height: 220px;
+			margin: 0 auto;
+			border-left: solid 1px #cecece;
+			border-bottom: solid 1px #cecece;
+			border-right: solid 1px #cecece;
+		}
+
+		.cjx7 {
+			width: 890px;
+			height: 50px;
+			background-color: #ffffff;
+			border-bottom: solid 1px #cecece;
+		}
+
+		.cjx7 a {
+			color: #000000;
+		}
+
+		.c {
+			width: 150px;
+			height: 50px;
+			background-color: #ffffff;
+			float: left;
+			border-top: solid 5px #00ae7d;
+			text-align: center;
+			padding: 9px;
+			color: #00AE7D;
+		}
+
+		.cjx8 {
+			width: 150px;
+			height: 50px;
+			background-color: #fafafa;
+			float: left;
+			border: solid 1px #AAAAAA;
+			text-align: center;
+			padding: 12px;
+		}
+
+		.cjx9 {
+			width: 150px;
+			height: 50px;
+			background-color: #fafafa;
+			float: left;
+			border-right: solid 1px #AAAAAA;
+			border-top: solid 1px #AAAAAA;
+			border-bottom: solid 1px #AAAAAA;
+			text-align: center;
+			padding: 12px;
+		}
+
+		.cjx10 {
+			width: 850px;
+			height: 90px;
+			margin-top: 10px;
+			margin-left: 35px;
+			float: left;
+		}
+
+		input [type="radio"] {
+			float: left;
+		}
+
+		.d {
+			width: 135px;
+			height: 50px;
+			float: left;
+		}
+
+		.e {
+			width: 120px;
+			height: 48px;
+			border: solid 1px #BCBCBC;
+		}
+
+		.cjx11 {
+			width: 889px;
+			height: 60px;
+			background-color: #636363;
+			margin-top: 110px;
+			font-size: 23px;
+			color: #ffffff;
+			line-height: 55px;
+		}
+
+		.cjx11 a {
+			font-size: 16px;
+			color: #ffffff;
+		}
+
+		.cjx11 b {
+			text-indent: 1em;
+			font-weight: 400;
+		}
+
+		.pan {
+			width: 100px;
+			height: 60px;
+			margin: 16px;
+		}
+
+		.cjx12 {
+			width: 200px;
+			height: 60px;
+			float: right;
+			font-size: 23px;
+			text-align: center;
+			background-color: #ff7466;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 开头 -->
+	<nav>
+		<div class="nav">
+			<ul class="fl">
+				<li><a href="./index.html"><img src="./img/k001.png" alt=""></a></li>
+				<li><a href="./destination.html">目的地</a></li>
+				<li><a href="./hotel.html">特价酒店</a></li>
+				<li><a href="./local.html">当地玩乐</a></li>
+				<li><a href="./customized.html">私人定制</a></li>
+				<li><a href="./drive.html">租车自驾</a></li>
+				<li class="pull_down"><a href="./visa.html">富游商城 <i
+							class="iconfont icon-tx-fill-sanjiaoxing-copy"></i></a>
+					<dl>
+						<a href="./railway.html">
+							<dt><i class="iconfont icon-qiche"></i>铁路</dt>
+						</a>
+						<a href="./visa.html">
+							<dd><i class="iconfont icon-qianzheng"></i>签证</dd>
+						</a>
+						<a href="./forum.html">
+							<dd><i class="iconfont icon-dangdiwanle1"></i>社区</dd>
+						</a>
+						<a href="./wedding.html">
+							<dd><i class="iconfont icon-hunsha"></i>婚纱旅拍</dd>
+						</a>
+						<a href="./strategy.html">
+							<dd><i class="iconfont icon-gonglve"></i>攻略</dd>
+						</a>
+					</dl>
+				</li>
+			</ul>
+			<ul class="fr">
+				<ul>
+					<li>
+						<a href="./silk_bag.html"><i class="iconfont icon-changyongtubiao_yonghusousuo"></a></i>
+						<input type="text" placeholder="土耳其">
+					</li>
+					<li><a href="https://login.taobao.com/"><i class="iconfont icon-taobao"></i></a></li>
+					<li><a href="https://uni.mp.qq.com/login?url=https%3A%2F%2Funi.mp.qq.com%2F"><i
+								class="iconfont icon-QQ"></i></a></li>
+					<li><a href="https://wx.qq.com/"><i class="iconfont icon-weixin"></i></a></li>
+					<li><a
+							href="https://login.sina.com.cn/signup/signin.php?r=https%3A%2F%2Fapi.weibo.com%2Foauth2%2Fauthorize%3Ftime%3D1648974148157%26sign%3Db7b9d8d098a9a397f0eea918f797643d%26client_id%3D1118290340%26redirect_uri%3Dhttp%253A%252F%252Flogin.qyer.com%252Flogin.php%253Faction%253Dweibo%26response_type%3Dcode%26refer%3Dwww.qyer.com%26state%3DPASSPORT000062495943e0654%26display%3Ddefault%26ismobile%3D0%26with_offical_account%3D1"><i
+								class="iconfont icon-xinlangweibo"></i></a></li>
+					<li><a href="./login.html">登录</a></li>
+					<li><a href="./register.html">注册</a></li>
+				</ul>
+			</ul>
+		</div>
+	</nav>
+	<!-- 开头 -->
+
+	<!-- 搜索 -->
+	<div class="core">
+		<div class="search">
+				<h1><a href="#">富游商城</a></h1>
+				<div class="ss">
+						<input type="text" placeholder="搜索国家、城市、产品" id="input" />
+						<button><i class="iconfont icon-changyongtubiao_yonghusousuo"></i></button>
+				</div>
+				<div class="biao wu" id="wu">
+						<div class="bie">
+								<h2>探索记录 <span class="op">清空记录</span></h2>
+								<ul>
+										<a href="./silk_bag.html">
+												<li>格鲁吉亚</li>
+										</a>
+								</ul>
+						</div>
+						<div class="disan">
+								<h2>热门目的地</h2>
+								<div class="disige">
+										<div>
+												<ul>
+														<a href="./silk_bag.html"><span class="mo">
+																		<li>日本</li>
+																</span></a>
+														<a href="./silk_bag.html">
+																<li>东京</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li><span class="op1">大阪 </span></li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>冲绳</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>北海道</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>名古屋</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>福冈</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>札幌</li>
+														</a>
+												</ul>
+										</div>
+								</div>
+								<div class="diwuge">
+										<div>
+												<ul>
+														<a href="./silk_bag.html"><span class="mo1">
+																		<li>泰国</li>
+																</span></a>
+														<a href="./silk_bag.html">
+																<li>曼谷</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li><span class="op1">普吉岛</span></li>
+														</a>
+														<a href="./silk_bag.html">
+																<li><span class="op1">清迈</span></li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>苏梅岛</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>甲米</li>
+														</a>
+												</ul>
+										</div>
+								</div>
+								<div class="diliuge">
+										<div>
+												<ul>
+														<a href="./silk_bag.html"><span class="mo1">
+																		<li>海岛</li>
+																</span></a>
+														<a href="./silk_bag.html">
+																<li>巴厘岛</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li><span class="op1">马尔代夫</span></li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>塞班岛</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>芽庄</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>长滩岛</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>沙巴</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>帕劳</li>
+														</a>
+												</ul>
+										</div>
+								</div>
+								<div class="diqige">
+										<div>
+												<ul>
+														<a href="./silk_bag.html">
+																<li>毛里求斯</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>塞舌尔</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>夏威夷</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>关岛</li>
+														</a>
+												</ul>
+										</div>
+								</div>
+								<div class="dibage">
+										<div>
+												<ul>
+														<a href="./silk_bag.html"><span class="mo1">
+																		<li>港澳台</li>
+																</span></a>
+														<a href="./silk_bag.html">
+																<li><span class="op1">香港</span></li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>台湾</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>澳门</li>
+														</a>
+												</ul>
+										</div>
+								</div>
+								<div class="dijiuge">
+										<div>
+												<ul>
+														<a href="./silk_bag.html"><span class="mo1">
+																		<li>亚洲</li>
+																</span></a>
+														<a href="./silk_bag.html">
+																<li>新加坡</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>马来西亚</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li><span class="op1">越南</span></li>
+														</a>
+														<a href="./silk_bag.html">
+																<li><span class="op1">柬埔寨</span></li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>斯里卡兰</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>迪拜</li>
+														</a>
+												</ul>
+										</div>
+								</div>
+								<div class="dishige">
+										<div>
+												<ul>
+														<a href="./silk_bag.html">
+																<li>尼泊尔</li>
+														</a>
+												</ul>
+										</div>
+								</div>
+								<div class="dishiyige">
+										<div>
+												<ul>
+														<a href="./silk_bag.html"><span class="mo1">
+																		<li>欧美</li>
+																</span></a>
+														<a href="./silk_bag.html">
+																<li>美国</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>法国</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li><span class="op1">西班牙</span></li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>意大利</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li><span class="op1">英国</span></li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>冰岛</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li><span class="op1">格鲁吉亚</span></li>
+														</a>
+												</ul>
+										</div>
+								</div>
+								<div class="dishierge">
+										<div>
+												<ul>
+														<a href="./silk_bag.html">
+																<li>德国</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>瑞士</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>加拿大</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>俄罗斯</li>
+														</a>
+												</ul>
+										</div>
+								</div>
+								<div class="dishisange">
+										<div>
+												<ul>
+														<a href="./silk_bag.html"><span class="mo1">
+																		<li>大洋洲</li>
+																</span></a>
+														<a href="./silk_bag.html">
+																<li><span class="op1">澳大利亚</span></li>
+														</a>
+														<a href="./silk_bag.html">
+																<li><span class="op1">新西兰</span></li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>大溪地</li>
+														</a>
+														<a href="./silk_bag.html">
+																<li>斐济</li>
+														</a>
+												</ul>
+										</div>
+								</div>
+						</div>
+				</div>
+				<script>
+						var wu = document.getElementById('wu');
+						var input = document.getElementById('input')
+						var biao = document.querySelector('.biao');
+						input.onclick = function () {
+								wu.className = 'biao';
+						}
+						biao.onmouseleave = function () {
+								wu.className = 'biao wu';
+						}
+				</script>
+				<div class="see">
+						<p><a href="./login.html"><i class="order iconfont icon-dingdan"></i> 我的订单</a></p>
+						<p><a href="./login.html"><i class="collection iconfont icon-aixin"></i> 我的收藏</a></p>
+				</div>
+		</div>
+</div>
+	<!-- 搜索 -->
+	<div class="cjx2">
+		<div class="cjx3">
+			<img src="img/i002.png" width="720px" height="42px">
+		</div>
+	</div>
+	<div class="cjx">
+		<div class="yxy">
+			<div class="cjx5">
+				<div class="yxy2">
+					<div class="yxy3">订单已生成：订单号：QYER2159638007<br /><a
+							href="./index.html">[特价酒店]香港旺角希尔顿花园酒店（大床房）</a>
+						<div class="b"><a>待支付:</a> 130.00</div>
+					</div>
+				</div>
+				<div class="yxy4">请在59分钟内支付，逾时订单自动关闭</div>
+			</div>
+			<div class="cjx6">
+				<ul class="cjx7">
+					<li class="c">支付平台</li>
+					<a href="#">
+						<li class="cjx8">信用卡</li><a />
+						<a href="#">
+							<li class="cjx9">储蓄卡</li><a />
+				</ul>
+				<div class="cjx10">
+					<ul>
+						<li class="d">
+							<input type="radio" name="sex" value="" checked="checked" />
+							<p class="e"><img src="img/i001.jpg" width="100px" height="45px"></p>
+						</li>
+						<li class="d">
+							<input type="radio" name="sex" value="" />
+							<p class="e"><img src="img/i003.png" width="100px" height="45px"></p>
+						</li>
+					</ul>
+				</div>
+				<div class="cjx11"><b class="pan"><a>待支付:</a>130.00</b>
+					<a href="./index.html">
+						<div class="cjx12">确认支付</div></a>
+						<script>
+							var cjx12 = document.querySelector('.cjx12');
+							cjx12.onclick = function () {
+								alert('支付成功，后续将收到短信通知...')
+							}
+						</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 结尾 -->
+	<footer>
+		<div class="footer">
+			<p class="jj">
+				<a href="#"><span>|&nbsp;&nbsp;富游简介</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;合作伙伴</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;加入我们</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;新手上路</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;使用帮助</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;网站地图</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;会员条款</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;社区指南</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;版权声明</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;免责声明</span></a>
+			</p>
+			<p>
+				<a>2004-2022 © 富游网® qyer.com All rights reserved. Version v5.57 京ICP备12003524号 <img src="./img/1129.png" alt="">
+					京公网安备11010502041090 京ICP证140673号营业执照经营许可证</a>
+			</p>
+		</div>
+	</footer>
+	<!-- 结尾 -->
+</body>
+
+</html>

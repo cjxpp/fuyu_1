@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3036624_2000l15qp8m.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3426322_0bzu5hchnbw8.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/hotel.css">
+    <title>【富游网】酒店预订,网上预订国际酒店,全球海外酒店价格查询</title>
+</head>
+
+<body>
+    <!-- 开头 -->
+	<nav>
+		<div class="nav">
+			<ul class="fl">
+				<li><a href="./index.html"><img src="./img/k001.png" alt=""></a></li>
+				<li><a href="./destination.html">目的地</a></li>
+				<li><a href="./hotel.html">特价酒店</a></li>
+				<li><a href="./local.html">当地玩乐</a></li>
+				<li><a href="./customized.html">私人定制</a></li>
+				<li><a href="./drive.html">租车自驾</a></li>
+				<li class="pull_down"><a href="./visa.html">富游商城 <i
+							class="iconfont icon-tx-fill-sanjiaoxing-copy"></i></a>
+					<dl>
+						<a href="./railway.html">
+							<dt><i class="iconfont icon-qiche"></i>铁路</dt>
+						</a>
+						<a href="./visa.html">
+							<dd><i class="iconfont icon-qianzheng"></i>签证</dd>
+						</a>
+						<a href="./forum.html">
+							<dd><i class="iconfont icon-dangdiwanle1"></i>社区</dd>
+						</a>
+						<a href="./wedding.html">
+							<dd><i class="iconfont icon-hunsha"></i>婚纱旅拍</dd>
+						</a>
+						<a href="./strategy.html">
+							<dd><i class="iconfont icon-gonglve"></i>攻略</dd>
+						</a>
+					</dl>
+				</li>
+			</ul>
+			<ul class="fr">
+				<ul>
+					<li>
+						<a href="./silk_bag.html"><i class="iconfont icon-changyongtubiao_yonghusousuo"></a></i>
+						<input type="text" placeholder="土耳其">
+					</li>
+					<li><a href="https://login.taobao.com/"><i class="iconfont icon-taobao"></i></a></li>
+					<li><a href="https://uni.mp.qq.com/login?url=https%3A%2F%2Funi.mp.qq.com%2F"><i
+								class="iconfont icon-QQ"></i></a></li>
+					<li><a href="https://wx.qq.com/"><i class="iconfont icon-weixin"></i></a></li>
+					<li><a
+							href="https://login.sina.com.cn/signup/signin.php?r=https%3A%2F%2Fapi.weibo.com%2Foauth2%2Fauthorize%3Ftime%3D1648974148157%26sign%3Db7b9d8d098a9a397f0eea918f797643d%26client_id%3D1118290340%26redirect_uri%3Dhttp%253A%252F%252Flogin.qyer.com%252Flogin.php%253Faction%253Dweibo%26response_type%3Dcode%26refer%3Dwww.qyer.com%26state%3DPASSPORT000062495943e0654%26display%3Ddefault%26ismobile%3D0%26with_offical_account%3D1"><i
+								class="iconfont icon-xinlangweibo"></i></a></li>
+					<li><a href="./login.html">登录</a></li>
+					<li><a href="./register.html">注册</a></li>
+				</ul>
+			</ul>
+		</div>
+	</nav>
+    <!-- 开头 -->
+
+    <!-- 标题 -->
+    <article>
+        <div class="art_top">
+            <h1><a href="#"><span>富游富游·Real便宜</span> 今日酒店特惠</a></h1>
+            <p><a href="#">帮你筛选全网特价酒店</a></p>
+        </div>
+    </article>
+    <!-- 标题 -->
+
+    <!-- 搜索 -->
+    <div class="search">
+        <input type="text" value="香港">
+        <div class="time">
+            <ul>
+                <li>入住日期</li>
+                <li>4月10日</li>
+                <li>周四</li>
+                <li>1晚</li>
+                <li>退房日期</li>
+                <li>4月22日</li>
+                <li>周五</li>
+            </ul>
+        </div>
+        <button><a href="javascript:;"><i class="iconfont icon-sousuo"></i>搜索优惠!</a></button>
+    </div>
+    <!-- 搜索 -->
+
+    <!-- 热门城市 -->
+    <div class="hot_city">
+        <ul>
+            <li><a href="#">热门特价城市</a></li>
+            <li><a href="#">香港</a></li>
+            <li><a href="#">京都</a></li>
+            <li><a href="#">曼谷</a></li>
+            <li><a href="#">巴黎</a></li>
+            <li><a href="#">纽约</a></li>
+            <li><a href="#">大阪</a></li>
+            <li><a href="#">伦敦</a></li>
+            <li><a href="#">旧金山</a></li>
+        </ul>
+    </div>
+    <!-- 热门城市 -->
+
+    <!-- 选择按钮 -->
+    <div class="radio">
+        <input type="radio" name="sort" checked="checked"><span> 默认排序</span>
+        <input type="radio" name="sort"><span> 低价优先</span>
+        <input type="radio" name="sort"><span> 折扣力度优先</span>
+    </div>
+    <!-- 选择按钮 -->
+
+    <!-- 内容 -->
+    <div class="hotel">
+        <ul>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9002.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">香港旺角希尔顿花园酒店</a></dd>
+                    <dd><a href="./ho_details.html">Hilton Garden Inn Hong Kong Mongkok</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.2</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥349</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离庙街夜市1.09km</a>
+                        <a href="#"><span>￥</span><span>249</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9003.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">素坤逸艾斯鲍克斯酒店</a></dd>
+                    <dd><a href="./ho_details.html">S Box Sukhumvit Hotel</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.6</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">￥498</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离四面佛1.3km</a>
+                        <a href="#"><span>￥</span><span>129</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9004.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷野餐酒店-兰南</a></dd>
+                    <dd><a href="./ho_details.html">Picnic Hotel Bangkok - Rang Nam(SHA Extra Plus)</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.6</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">￥569</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离庙街1.09km</a>
+                        <a href="#"><span>￥</span><span>119</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9005.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">素坤逸S31酒店</a></dd>
+                    <dd><a href="./ho_details.html">S31 Sukhumvit Hotel - Sha Extra Plus</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.6</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥446</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离玉佛寺1.6km</a>
+                        <a href="#"><span>￥</span><span>346</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9006.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷优本纳朗双酒店</a></dd>
+                    <dd><a href="./ho_details.html">Urbana Langsuan Hotel</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.6</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥198</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离达美乐0.62km</a>
+                        <a href="#"><span>￥</span><span>98</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9007.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷阿达焦酒店</a></dd>
+                    <dd><a href="./ho_details.html">Adagio Bangkok</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.0</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">$196</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离Terminal1.27km</a>
+                        <a href="#"><span>￥</span><span>119</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9008.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷暹逻沙拉多酒店</a></dd>
+                    <dd><a href="./ho_details.html">Siam Tharadol</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.8</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥329</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离达美乐1.33km</a>
+                        <a href="#"><span>￥</span><span>119</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9009.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷抛利沃特尔酒店</a></dd>
+                    <dd><a href="./ho_details.html">Livotel Hotel Lat Phrao Bangkok</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.0</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥190</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离卧佛寺1.98km</a>
+                        <a href="#"><span>￥</span><span>99</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9010.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷科利沃特尔酒店</a></dd>
+                    <dd><a href="./ho_details.html">Livotel Hotel Hua Mak Bangkok</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.8</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥170</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离体育场1.74km</a>
+                        <a href="#"><span>￥</span><span>98</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9011.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷-美憬阁酒店 </a></dd>
+                    <dd><a href="./ho_details.html">VIE Hotel Bangkok, MGallery Hotel</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">9.2</span><span class="bold">好极了</span></a>
+                        |<a href="#"> 五级奢华</a>
+                        <a href="#" class="hotel_fr">￥268</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离四面佛1.2km</a>
+                        <a href="#"><span>￥</span><span>168</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9012.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷瑞法义公寓式酒店</a></dd>
+                    <dd><a href="./ho_details.html">Amari Residences Bangkok - Sha Extra Plus</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.2</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥468</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离玉佛寺1.48km</a>
+                        <a href="#"><span>￥</span><span>268</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9013.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷广场卢比德旅舍</a></dd>
+                    <dd><a href="./ho_details.html">Hilton Garden Inn Hong Kong Mongkok</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.2</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥165</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离庙街夜市1.09km</a>
+                        <a href="#"><span>￥</span><span>129</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9014.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷白金诺富特酒店</a></dd>
+                    <dd><a href="./ho_details.html">Novotel Bangkok Platinum</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">9.4</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥218</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离黑光餐厅1.6km</a>
+                        <a href="#"><span>￥</span><span>128</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9015.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷18巷丽亭酒店</a></dd>
+                    <dd><a href="./ho_details.html">Park Plaza Bangkok Soi 18</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">9.2</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥345</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离Termin1.09km</a>
+                        <a href="#"><span>￥</span><span>268</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9016.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">考山艺术酒店</a></dd>
+                    <dd><a href="./ho_details.html">Khaosan Art Hotel</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.0 </span><span class="bold">非常好</span></a>
+                        |<a href="#"> 二级经济</a>
+                        <a href="#" class="hotel_fr">￥195</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离玉佛寺1.9km</a>
+                        <a href="#"><span>￥</span><span>112</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9019.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷卧室叻抛101巷酒店</a></dd>
+                    <dd><a href="./ho_details.html">The Bedroom Ladprao</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.8</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥273</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离周末广场1.9km</a>
+                        <a href="#"><span>￥</span><span>168</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9020.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">乔许酒店</a></dd>
+                    <dd><a href="./ho_details.html">Josh Hotel</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.2</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥428</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离四面佛1.79km</a>
+                        <a href="#"><span>￥</span><span>336</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9021.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">克利泰套房酒店</a></dd>
+                    <dd><a href="./ho_details.html">Kritthai Residence</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">9.0</span><span class="bold">好极了</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">￥570</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离四面佛1.32km</a>
+                        <a href="#"><span>￥</span><span>429</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9022.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">UHG娜娜阿尔特酒店</a></dd>
+                    <dd><a href="./ho_details.html">Alt Hotel Nana by UHG</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.8</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥313</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离四面佛1.63km</a>
+                        <a href="#"><span>￥</span><span>139</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9023.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">格兰酒店</a></dd>
+                    <dd><a href="./ho_details.html">Grand Inn Hotel</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">6.8</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">￥268</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>四面佛1.38km</a>
+                        <a href="#"><span>￥</span><span>168</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9024.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">诺富特暹罗广场酒店</a></dd>
+                    <dd><a href="./ho_details.html">Novotel Bangkok on</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">9.0</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥483</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离四面佛0.61km</a>
+                        <a href="#"><span>￥</span><span>283</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9025.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷文思酒店</a></dd>
+                    <dd><a href="./ho_details.html">Hotel Once Bangkok</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.0</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥368</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离夜市0.36km</a>
+                        <a href="#"><span>￥</span><span>268</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9026.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷汉萨尔酒店</a></dd>
+                    <dd><a href="./ho_details.html">Hansar Bangkok (SHA Plus+)</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">9.2</span><span class="bold">好极了</span></a>
+                        |<a href="#">五级奢华</a>
+                        <a href="#" class="hotel_fr">￥229</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离四面佛0.46km</a>
+                        <a href="#"><span>￥</span><span>￥129</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9027.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷索菲特特色酒店</a></dd>
+                    <dd><a href="./ho_details.html">SO/ Bangkok</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">9.4</span><span class="bold">好极了</span></a>
+                        |<a href="#"> 五级奢华</a>
+                        <a href="#" class="hotel_fr">￥322</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离地铁1.53km</a>
+                        <a href="#"><span>￥</span><span>120</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9028.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">宜必思曼谷河滨酒店</a></dd>
+                    <dd><a href="./ho_details.html">Ibis Bangkok Riverside</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.8</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">￥270</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离湄南河1.4km</a>
+                        <a href="#"><span>￥</span><span>170</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9029.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷素里翁坦塔旺酒店</a></dd>
+                    <dd><a href="./ho_details.html">The Tarntawan Hotel Surawong</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">7.8</span><span class="bold">好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥190</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离暹罗广场1.8km</a>
+                        <a href="#"><span>￥</span><span>110</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9030.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">曼谷莎玛素坤逸公寓式酒店</a></dd>
+                    <dd><a href="./ho_details.html">Shama Sukhumvit Bangkok</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">9.0</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥226</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离四面佛1.36km</a>
+                        <a href="#"><span>￥</span><span>126</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9031.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">坎攀甘酒店</a></dd>
+                    <dd><a href="./ho_details.html">Kampaeng Ngam Hotel</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.2</span><span class="bold">非常好</span></a>
+                        |<a href="#">三级舒适</a>
+                        <a href="#" class="hotel_fr">￥446</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离迪龙寺1.8km</a>
+                        <a href="#"><span>￥</span><span>326</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9032.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">清迈巴特里公园别墅</a></dd>
+                    <dd><a href="./ho_details.html">The Battery Park Midtown </a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.0</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">￥498</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离迪龙寺1.07km</a>
+                        <a href="#"><span>￥</span><span>298</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9033.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">清迈塔帕依姆酒店</a></dd>
+                    <dd><a href="./ho_details.html">Imm Hotel Thaphae Chiang Mai</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.4</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">￥446</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离迪龙寺0.8km</a>
+                        <a href="#"><span>￥</span><span>226</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9034.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">奇瓦迪酒店</a></dd>
+                    <dd><a href="./ho_details.html">Cheeva Dee Hotel</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">9.2 </span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥192</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离迪龙寺0.66km</a>
+                        <a href="#"><span>￥</span><span>99</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9035.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">清迈尼曼酒店</a></dd>
+                    <dd><a href="./ho_details.html">The Nimman Hotel</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.2</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">￥180</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离迈古城1.76km</a>
+                        <a href="#"><span>￥</span><span>99</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9036.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">巴恩萨拜精品之家酒店</a></dd>
+                    <dd><a href="./ho_details.html">Baan U Sabai Boutique House</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.6</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">￥226</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离六夜市1.54km</a>
+                        <a href="#"><span>￥</span><span>100</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9037.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">清迈都喜酒店</a></dd>
+                    <dd><a href="./ho_details.html">Dusit D2 Chiang Mai </a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.8</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 五级奢华</a>
+                        <a href="#" class="hotel_fr">￥279</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离迪龙寺1.42km</a>
+                        <a href="#"><span>￥</span><span>200</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9038.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">清邁U 酒店</a></dd>
+                    <dd><a href="./ho_details.html">U Chiang Mai</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">9.2</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥468</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离迪龙寺0.18km</a>
+                        <a href="#"><span>￥</span><span>168</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9039.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">秦达精品酒店</a></dd>
+                    <dd><a href="./ho_details.html">Chinda Boutique Hotel</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.8</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">￥190</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离迪龙寺0.82km</a>
+                        <a href="#"><span>￥</span><span>150</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9040.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">清迈Cross感应第西姆酒店</a></dd>
+                    <dd><a href="./ho_details.html">Cross Vibe Chiang Mai Decem</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.8</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥326</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离迈宁曼路1.01km</a>
+                        <a href="#"><span>￥</span><span>168</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9041.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">清迈塔佩度假酒店 </a></dd>
+                    <dd><a href="./ho_details.html">Away Chiang Mai Thapae</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">9.2 </span><span class="bold">非常好</span></a>
+                        |<a href="#"> 四级高端</a>
+                        <a href="#" class="hotel_fr">￥446</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离迪龙寺0.89km</a>
+                        <a href="#"><span>￥</span><span>224</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9042.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">加拉里通塔公寓式酒店</a></dd>
+                    <dd><a href="./ho_details.html">Galare Thong Tower</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">6.0</span><span class="bold">好</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">￥128</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离清迈门1.09km</a>
+                        <a href="#"><span>￥</span><span>78</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt><a href="./ho_details.html"><img src="./img/9043.jpg" alt=""></a></dt>
+                    <dd><a href="./ho_details.html">北极点酒店</a></dd>
+                    <dd><a href="./ho_details.html">Top North Hotel</a></dd>
+                    <dd>
+                        <a href="#"><span class="size">8.2</span><span class="bold">非常好</span></a>
+                        |<a href="#"> 三级舒适</a>
+                        <a href="#" class="hotel_fr">￥199</a>
+                    </dd>
+                    <dd>
+                        <a href="#"><i class="iconfont icon-dingweixiao1"></i>距离迪龙寺0.64km</a>
+                        <a href="#"><span>￥</span><span>100</span><span>起</span></a>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <!-- 内容 -->
+
+    <!-- 结尾 -->
+    <footer>
+        <div class="footer">
+            <p class="jj">
+                <a href=" "><span>|&nbsp;&nbsp;富游简介</span></a>
+                <a href="#"><span>|&nbsp;&nbsp;合作伙伴</span></a>
+                <a href="#"><span>|&nbsp;&nbsp;加入我们</span></a>
+                <a href="#"><span>|&nbsp;&nbsp;新手上路</span></a>
+                <a href="#"><span>|&nbsp;&nbsp;使用帮助</span></a>
+                <a href="#"><span>|&nbsp;&nbsp;网站地图</span></a>
+                <a href="#"><span>|&nbsp;&nbsp;会员条款</span></a>
+                <a href="#"><span>|&nbsp;&nbsp;社区指南</span></a>
+                <a href="#"><span>|&nbsp;&nbsp;版权声明</span></a>
+                <a href="#"><span>|&nbsp;&nbsp;免责声明</span></a>
+            </p>
+            <p>
+                <a>2004-2022 富游网 qyer.com All rights reserved. Version v5.57 京ICP备12003524号 <img src="./img/1129.png"
+                        alt="">
+                    京公网安备11010502041090 京ICP证140673号营业执照经营许可证</a>
+            </p>
+        </div>
+    </footer>
+    <!-- 结尾 -->
+</body>
+
+</html>

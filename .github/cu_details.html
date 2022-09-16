@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>【富游网】私人订制，随心所定，带给你专业，高效，个性化特色旅游线路设计。来！定个旅行吧</title>
+	<link rel="stylesheet" href="./css/public.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_3036624_2000l15qp8m.css">
+	<link rel="shortcut icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_3426322_0bzu5hchnbw8.css">
+	<style type="text/css">
+		input {
+			outline: none;
+		}
+
+		body {
+			background-color: #f5f5f5;
+		}
+		/*上方导航栏*/
+		#cjx {
+			width: 100%;
+			height: 2510px;
+		}
+
+		.cjx2 {
+			background: url(img/a001.jpg)no-repeat 50%;
+			width: 100%;
+			height: 350px;
+		}
+
+		.cjx3 {
+			width: 1160px;
+			margin: 0 auto;
+			margin-top: -25px;
+			margin-bottom: 19px;
+		}
+
+		.cjx3 img {
+			height: 185px;
+			cursor: pointer;
+			transition: all 0.5s;
+			border-radius: 20px;
+		}
+
+		.cjx3:hover {
+			transform: scale(0.993);
+			transition: 1s;
+		}
+
+		@keyframes animated-border {
+			0% {
+				box-shadow: 0 0 0 0 rgba(255, 255, 0);
+			}
+
+			50% {
+				box-shadow: 0 0 0 1px rgba(255, 255, 255, 10);
+			}
+		}
+
+		.cjx4 {
+			margin: 0 auto;
+			width: 1160px;
+			height: 428px;
+			margin-bottom: 20px;
+			background-color: #fff;
+			padding: 50px 10px 10px 50px;
+			border-bottom: 2px #e7e7e7;
+			border-radius: 10px;
+			animation: animated-border 1.99s infinite;
+		}
+
+		.cjx5 {
+			font-size: 25px;
+			color: #00b180;
+			margin-bottom: 25px;
+		}
+
+		.cjx7 {
+			width: 470px;
+			height: 77px;
+			float: left;
+			margin-bottom: 8px;
+		}
+
+		.cjx8 {
+			width: 101px;
+			font-family: "微软雅黑";
+			font-size: 17px;
+			font-weight: 600;
+			line-height: 38px;
+			float: left;
+			margin-right: 10px;
+		}
+
+		.cjx7 input[type=text] {
+			width: 290px;
+			height: 37px;
+			border-radius: 10px;
+			padding: 0 10px;
+			border: 1px solid #afafaf;
+			font-size: 14px;
+			font-weight: 500;
+		}
+
+		.cjx8 {
+			margin-bottom: 10px;
+		}
+
+		.cjx10 {
+			color: #f2372b;
+		}
+
+		.yxy {
+			text-indent: 1em;
+			font-size: 12px;
+			margin: 5px;
+			color: #848484;
+		}
+
+		.yxy2 {
+			width: 100%;
+		}
+
+		.yxy3 {
+			width: 100%;
+			font-family: "微软雅黑";
+			font-size: 17px;
+			font-weight: 600;
+			line-height: 38px;
+			float: left;
+			height: 80px;
+		}
+
+		.yxy2 .yxy3 input[type=text] {
+			width: 180px;
+			height: 39px;
+			padding: 0 16px;
+			margin-right: 20px;
+			border-radius: 10px;
+			padding: 0 10px;
+			border: 1px solid silver;
+			font-size: 14px;
+			font-weight: 500;
+		}
+
+		.yxy4 {
+			text-indent: 9em;
+			font-size: 12px;
+			color: #848484;
+			font-weight: 500;
+		}
+
+		.cjx11 {
+			width: 1160px;
+			height: 810px;
+			background-color: #ffffff;
+			margin: 0 auto;
+			border-radius: 10px;
+			padding: 50px 10px 10px 50px;
+		}
+
+		.cjx12 {
+			font-size: 25px;
+			color: #00b180;
+			margin-bottom: 25px;
+			margin-left: 13px;
+		}
+
+		.cjx13 {
+			margin-top: 30px;
+		}
+
+		.cjx14 {
+			width: 900px;
+			height: 60px;
+			margin-top: 25px;
+		}
+
+		.cjx15 {
+			padding: 15px;
+			width: 100px;
+			font-family: "微软雅黑";
+			font-size: 17px;
+			font-weight: 600;
+			float: left;
+		}
+
+		.cjx16 {
+			padding: 10px;
+			margin-top: 6px;
+			width: 128px;
+			height: 45px;
+			font-weight: 500;
+			transition: 0.7s;
+			border: 1px solid #c3c3c3;
+			border-radius: 10px;
+			font-family: "微软雅黑";
+			font-size: 15px;
+		}
+
+		.cjx17 {
+			float: left;
+			margin-right: 20px;
+			text-align: center;
+			font-size: 16px;
+			color: #636363;
+		}
+
+		.cjx18,
+		.cjx19,
+		.cjx20,
+		.cjx21,
+		.cjx22 {
+			padding: 10px;
+			margin-top: 6px;
+			width: 128px;
+			height: 45px;
+			font-weight: 500;
+			transition: 0.7s;
+			border: 1px solid #c3c3c3;
+			border-radius: 12px;
+			font-family: "微软雅黑";
+			font-size: 15px;
+		}
+
+		.cjx23 {
+			height: 150px;
+			width: 650px;
+			font-weight: 500;
+			font-family: "微软雅黑";
+			border: solid 1px #848484;
+			font-size: 15px;
+			padding: 15px;
+			border-radius: 12px;
+			overflow: hidden;
+			resize: none;
+			/* 用户将无法调整元素的尺寸*/
+		}
+
+		.cjx24 {
+			width: 1160px;
+			height: 420px;
+			background-color: #ffffff;
+			margin: 0 auto;
+			border-radius: 10px;
+			margin-top: 20px;
+			padding: 50px 10px 10px 70px;
+		}
+
+		.cjx25 {
+			font-size: 25px;
+			color: #00b180;
+			margin-bottom: 40px;
+			margin-left: 13px;
+		}
+
+		.cjx26 {
+			width: 470px;
+			height: 55px;
+			float: left;
+			margin-bottom: 8px;
+		}
+
+		.cjx27 {
+			width: 100px;
+			font-family: "微软雅黑";
+			font-size: 17px;
+			font-weight: 600;
+			line-height: 38px;
+			float: left;
+			margin-right: 10px;
+		}
+
+		.cjx26 input[type=text] {
+			width: 290px;
+			height: 37px;
+			padding: 0 10px;
+			border: 1px solid #afafaf;
+			font-size: 14px;
+			font-weight: 500;
+		}
+
+		.cjx27 {
+			margin-bottom: 10px;
+		}
+
+		.cjx28 {
+			color: #f2372b;
+		}
+
+		.yxy {
+			text-indent: 1em;
+			font-size: 12px;
+			margin: 5px;
+			color: #848484;
+		}
+
+		.yxy2 {
+			width: 100%;
+		}
+
+		.yxy3 {
+			width: 100%;
+			font-family: "微软雅黑";
+			font-size: 17px;
+			font-weight: 600;
+			line-height: 38px;
+			float: left;
+			height: 80px;
+		}
+
+		.yxy2 .yxy3 input[type=text] {
+			width: 180px;
+			height: 39px;
+			padding: 0 16px;
+			margin-right: 20px;
+			padding: 0 10px;
+			border: 1px solid silver;
+			font-size: 14px;
+			font-weight: 500;
+		}
+
+		.pa {
+			width: 570px;
+			height: 77px;
+			float: left;
+			margin-bottom: 8px;
+		}
+
+		.pa input[type=text] {
+			width: 219px;
+			height: 39px;
+			padding: 0 16px;
+			margin-right: 20px;
+			padding: 0 10px;
+			border: 1px solid silver;
+			font-size: 14px;
+			font-weight: 500;
+		}
+
+		.yxy4 {
+			text-indent: 9em;
+			font-size: 12px;
+			color: #848484;
+			font-weight: 500;
+		}
+
+		.pan {
+			font-size: 14px;
+			color: #000000;
+			line-height: 38px;
+		}
+
+		.option {
+			width: 305px;
+			height: 39px;
+			border: aliceblue solid 1px;
+			border: 1px solid #afafaf;
+		}
+
+		.option2 {
+			width: 65px;
+			height: 39px;
+			border: aliceblue solid 1px;
+			border: 1px solid #afafaf;
+		}
+
+		.ta {
+			width: 470px;
+			height: 77px;
+			float: left;
+			margin-bottom: 8px;
+			position: relative;
+		}
+
+		.ta input[type=text] {
+			width: 200px;
+			height: 39px;
+			margin-right: 22px;
+			padding: 0 10px;
+			border: 1px solid #b6b6b6;
+			font-size: 14px;
+			font-weight: 500;
+		}
+
+		.tan {
+			width: 93px;
+			position: absolute;
+			right: 67px;
+			height: 39px;
+			border-left: 1px solid #afafaf;
+			border-top: 1px solid #afafaf;
+			border-bottom: 1px solid #afafaf;
+			border-right: 1px solid #afafaf;
+			cursor: pointer;
+			overflow: hidden;
+		}
+
+		.ka input[type=text] {
+			width: 210px;
+			height: 39px;
+			padding: 0 16px;
+			padding: 0 10px;
+			border: 1px solid #b6b6b6;
+			font-size: 14px;
+			font-weight: 500;
+		}
+
+		.ka {
+			width: 470px;
+			height: 77px;
+			float: left;
+			margin-bottom: 8px;
+			position: relative;
+		}
+
+		.zz {
+			width: 80px;
+			float: right;
+			height: 39px;
+			padding: 5px 20px;
+			margin-right: 70px;
+			border-left: 1px solid #afafaf;
+			border-top: 1px solid #afafaf;
+			border-bottom: 1px solid #afafaf;
+			border-right: 1px solid #afafaf;
+			background-color: #00B180;
+			font-size: 15px;
+			font-weight: 300;
+		}
+
+		.kan {
+			font-weight: 400;
+		}
+
+		.ka a h3 {
+			color: #ffffff;
+		}
+
+		.cjx29 {
+			width: 470px;
+			height: 65px;
+			float: left;
+			margin-top: 18px;
+			margin-left: 10px;
+		}
+
+		.cjx30 {
+			width: 15px;
+			height: 15px;
+		}
+
+		.cjx31 {
+			font-size: 17px;
+			font-weight: 700;
+			font-family: "微软雅黑";
+		}
+
+		.cjx32 {
+			width: 265px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+
+		.cjx33 {
+			margin: 0 auto;
+			margin-top: 38px;
+			font-family: "微软雅黑";
+			height: 71px;
+			text-align: center;
+			padding: 20px;
+			font-weight: bold;
+			font-size: 23px;
+			border-radius: 20px;
+			background-color: white;
+			box-shadow: 0px 2px 5px#19191984;
+			color: rgb(84, 84, 84);
+		}
+
+		.cjx34 {
+			height: 55px;
+			width: 100%;
+		}
+
+		.cjx35 {
+			position: relative;
+			height: 70px;
+			width: 1160px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			text-align: center;
+		}
+
+		.cjx35 li::after {
+			content: '';
+			height: 20px;
+			width: .5px;
+			display: block;
+			background-color: #848484;
+			position: absolute;
+			bottom: -3px;
+		}
+
+		.cjx35 li:nth-of-type(1)::after {
+			content: '';
+			background: none;
+		}
+
+		.cjx36 {
+			width: 140px;
+			text-align: center;
+			padding: 2px;
+			height: 37px;
+			float: left;
+			font-size: 19px;
+			margin-top: 45px;
+			margin-right: 1px;
+		}
+
+		.cjx36:last-child {
+			border: 0;
+		}
+
+		.cjx36 a {
+			color: #2a2a2a;
+			font-size: 16px;
+		}
+
+		.cjx36 a:hover {
+			color: #4f4f4f;
+			font-size: 18px;
+		}
+
+		/* 结尾 */
+
+		.footer {
+			padding-top: 30px;
+			width: 100%;
+			height: 180px;
+			background-color: #232323;
+			text-align: center;
+		}
+
+		.jj a {
+			margin: 0 2px;
+			color: #c0c0c0;
+			font: bold 16px '微软雅黑';
+		}
+
+		.footer p:last-child a {
+			font-size: 14px;
+			color: #c0c0c0;
+			line-height: 75px;
+		}
+
+		.footer p:last-child a img {
+			vertical-align: middle;
+		}
+
+		.fl img {
+			width: 80px;
+			height: 35px;
+		}
+
+		/* 结尾 */
+	</style>
+</head>
+
+<body>
+	<nav>
+		<div class="nav">
+			<ul class="fl">
+				<li><a href="./index.html"><img src="./img/k001.png" alt=""></a></li>
+				<li><a href="./destination.html">目的地</a></li>
+				<li><a href="./hotel.html">特价酒店</a></li>
+				<li><a href="./local.html">当地玩乐</a></li>
+				<li><a href="./customized.html">私人定制</a></li>
+				<li><a href="./drive.html">租车自驾</a></li>
+				<li class="pull_down"><a href="./visa.html">富游商城 <i
+							class="iconfont icon-tx-fill-sanjiaoxing-copy"></i></a>
+					<dl>
+						<a href="./railway.html">
+							<dt><i class="iconfont icon-qiche"></i>铁路</dt>
+						</a>
+						<a href="./visa.html">
+							<dd><i class="iconfont icon-qianzheng"></i>签证</dd>
+						</a>
+						<a href="./forum.html">
+							<dd><i class="iconfont icon-dangdiwanle1"></i>社区</dd>
+						</a>
+						<a href="./wedding.html">
+							<dd><i class="iconfont icon-hunsha"></i>婚纱旅拍</dd>
+						</a>
+						<a href="./strategy.html">
+							<dd><i class="iconfont icon-gonglve"></i>攻略</dd>
+						</a>
+					</dl>
+				</li>
+			</ul>
+			<ul class="fr">
+				<ul>
+					<li>
+						<a href="./silk_bag.html"><i class="iconfont icon-changyongtubiao_yonghusousuo"></a></i>
+						<input type="text" placeholder="土耳其">
+					</li>
+					<li><a href="https://login.taobao.com/"><i class="iconfont icon-taobao"></i></a></li>
+					<li><a href="https://uni.mp.qq.com/login?url=https%3A%2F%2Funi.mp.qq.com%2F"><i
+								class="iconfont icon-QQ"></i></a></li>
+					<li><a href="https://wx.qq.com/"><i class="iconfont icon-weixin"></i></a></li>
+					<li><a
+							href="https://login.sina.com.cn/signup/signin.php?r=https%3A%2F%2Fapi.weibo.com%2Foauth2%2Fauthorize%3Ftime%3D1648974148157%26sign%3Db7b9d8d098a9a397f0eea918f797643d%26client_id%3D1118290340%26redirect_uri%3Dhttp%253A%252F%252Flogin.qyer.com%252Flogin.php%253Faction%253Dweibo%26response_type%3Dcode%26refer%3Dwww.qyer.com%26state%3DPASSPORT000062495943e0654%26display%3Ddefault%26ismobile%3D0%26with_offical_account%3D1"><i
+								class="iconfont icon-xinlangweibo"></i></a></li>
+					<li><a href="./login.html">登录</a></li>
+					<li><a href="./register.html">注册</a></li>
+				</ul>
+			</ul>
+		</div>
+	</nav>
+	<!--上方导航栏-->
+	<div id="cjx">
+		<div class="cjx2"></div>
+		<div class="cjx3"><a href="#"><img src="img/a002.png"></a></div>
+		<div class="cjx4">
+			<p class="cjx5">* 基础信息</p>
+			<ul>
+				<li class="cjx7">
+					<a class="cjx8">出发地 :</a>
+					<input type="text" placeholder="请输入您的出发地" value>
+					<p class="cjx10" style="display: none;">请输入您的出发地</p>
+				</li>
+				<li class="cjx7">
+					<a class="cjx8">目的地 :</a>
+					<input type="text" placeholder="请输入您的目的地" value>
+					<p class="yxy">若多个目的地，请用“，”隔开</p>
+					<p class="cjx10" style="display: none;">请输入您的目的地</p>
+				</li>
+
+				<li class="cjx7">
+					<a class="cjx8">出发日期 :</a>
+					<input type="text" placeholder="请输入出发日期" value>
+					<p class="cjx10" style="display: none;">请输入出发日期</p>
+				</li>
+				<li class="cjx7">
+					<a class="cjx8">游玩天数 :</a>
+					<input type="text" placeholder="请输入您的游玩天数" value>
+					<p class="cjx10" style="display: none;">请输入您的游玩天数</p>
+				</li>
+				<li class="yxy2">
+					<a class="yxy3">出行人数 :&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="text" placeholder="大人" value>
+						<input type="text" placeholder="儿童" value>
+						<input type="text" placeholder="婴儿" value>
+						<p class="yxy4">儿童标准：年龄2～12周岁（不含）</p>
+					</a>
+					<p class="cjx10" style="display: none;"></p>
+				</li>
+				<li class="cjx7">
+					<a class="cjx8">总预算 :</a>
+					<input type="text" placeholder="请输入您的预算(元)" value>
+					<p class="cjx10" style="display: none;"></p>
+				</li>
+			</ul>
+		</div>
+		<div class="cjx11">
+			<p class="cjx12">定制信息</p>
+			<ul class="cjx13">
+				<li class="cjx14">
+					<h2 class="cjx15">航班类型</h2>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx16">无需安排</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx16">直飞</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx16">中转</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx16">不限</h3>
+					</a>
+				</li>
+				<li class="cjx14">
+					<h2 class="cjx15">酒店类型</h2>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx18">无需安排</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx18">三星</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx18">四星</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx18">五星</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx18">不限</h3>
+					</a>
+				</li>
+				<li class="cjx14">
+					<h2 class="cjx15">用车安排</h2>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx19">无需安排</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx19">全程用车</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx19">只含接送机</h3>
+					</a>
+				</li>
+				<li class="cjx14">
+					<h2 class="cjx15">行程安排</h2>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx20">无需安排</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx20">紧凑</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx20">适中</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx20">宽松</h3>
+					</a>
+				</li>
+				<li class="cjx14">
+					<h2 class="cjx15">签证</h2>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx21">自行办理</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx21">委托办理</h3>
+					</a>
+				</li>
+				<li class="cjx14">
+					<h2 class="cjx15">保险</h2>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx22">无需办理</h3>
+					</a>
+					<a href="javascript:;" class="cjx17">
+						<h3 class="cjx22">委托办理</h3>
+					</a>
+				</li>
+				<li class="cjx14">
+					<h2 class="cjx15">我的要求</h2>
+					<textarea placeholder="请输入个性化要求" name="" class="cjx23"></textarea>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var cjx16 = document.querySelectorAll('.cjx16');
+			var index = 0;
+			cjx16[0].style.backgroundColor = '#00b180';
+			for (var i = 0; i < cjx16.length; i++) {
+				cjx16[i].num = i;
+				cjx16[i].onclick = function () {
+					for (var i = 0; i < cjx16.length; i++) {
+						cjx16[i].style.backgroundColor = 'white';
+					}
+					index = this.num
+					cjx16[index].style.backgroundColor = '#00b180';
+				}
+
+			}
+		</script>
+		<script type="text/javascript">
+			var cjx18 = document.querySelectorAll('.cjx18');
+			var index = 0;
+			cjx18[0].style.backgroundColor = '#00b180';
+			for (var i = 0; i < cjx18.length; i++) {
+				cjx18[i].num = i;
+				cjx18[i].onclick = function () {
+					for (var i = 0; i < cjx18.length; i++) {
+						cjx18[i].style.backgroundColor = 'white';
+					}
+					index = this.num
+					cjx18[index].style.backgroundColor = '#00b180';
+				}
+
+			}
+		</script>
+		<script type="text/javascript">
+			var cjx19 = document.querySelectorAll('.cjx19');
+			var index = 0;
+			cjx19[0].style.backgroundColor = '#00b180';
+			for (var i = 0; i < cjx19.length; i++) {
+				cjx19[i].num = i;
+				cjx19[i].onclick = function () {
+					for (var i = 0; i < cjx19.length; i++) {
+						cjx19[i].style.backgroundColor = 'white';
+					}
+					index = this.num
+					cjx19[index].style.backgroundColor = '#00b180';
+				}
+
+			}
+		</script>
+		<script type="text/javascript">
+			var cjx20 = document.querySelectorAll('.cjx20');
+			var index = 0;
+			cjx20[0].style.backgroundColor = '#00b180';
+			for (var i = 0; i < cjx20.length; i++) {
+				cjx20[i].num = i;
+				cjx20[i].onclick = function () {
+					for (var i = 0; i < cjx20.length; i++) {
+						cjx20[i].style.backgroundColor = 'white';
+					}
+					index = this.num
+					cjx20[index].style.backgroundColor = '#00b180';
+				}
+
+			}
+		</script>
+		<script type="text/javascript">
+			var cjx21 = document.querySelectorAll('.cjx21');
+			var index = 0;
+			cjx21[0].style.backgroundColor = '#00b180';
+			for (var i = 0; i < cjx21.length; i++) {
+				cjx21[i].num = i;
+				cjx21[i].onclick = function () {
+					for (var i = 0; i < cjx21.length; i++) {
+						cjx21[i].style.backgroundColor = 'white';
+					}
+					index = this.num
+					cjx21[index].style.backgroundColor = '#00b180';
+				}
+
+			}
+		</script>
+		<script type="text/javascript">
+			var cjx22 = document.querySelectorAll('.cjx22');
+			var index = 0;
+			cjx22[0].style.backgroundColor = '#00b180';
+			for (var i = 0; i < cjx22.length; i++) {
+				cjx22[i].num = i;
+				cjx22[i].onclick = function () {
+					for (var i = 0; i < cjx22.length; i++) {
+						cjx22[i].style.backgroundColor = 'white';
+					}
+					index = this.num
+					cjx22[index].style.backgroundColor = '#00b180';
+				}
+
+			}
+		</script>
+		<div class="cjx24">
+			<p class="cjx25">联系人信息</p>
+			<ul>
+				<li class="cjx26">
+					<a class="cjx27">* 姓名</a>
+					<input type="text" placeholder="请输入姓名" value>
+					<p class="cjx28" style="display: none;">请输入姓名</p>
+				</li>
+				<li class="pa">
+					<a class="cjx27">* 手机</a>
+					<tr>
+						<td class="pan">
+							<select class="option2">
+								<option value="0" class="option">+86</option>
+								<option value="1" class="option"> 中国台湾 </option>
+								<option value="2" class="option"> 中国香港 </option>
+								<option value="3" class="option"> 中国澳门 </option>
+								<option value="4" class="option"> 俄罗斯 </option>
+								<option value="5" class="option"> 中国大陆</option>
+								<option value="6" class="option"> 韩国 </option>
+								<option value="7" class="option"> 缅甸 </option>
+								<option value="8" class="option"> 冰岛 </option>
+							</select>
+						</td>
+						<input type="text" placeholder="请输入您的手机号" value>
+						<p class="cjx28" style="display: none;">请输入您的手机号</p>
+					</tr>
+				</li>
+				<li class="ta">
+					<a class="cjx27">* 图片识别码</a>
+					<input type="text" placeholder="" value>
+					<img src="img/a004.png" alt title="刷新图片识别码" class="tan">
+				</li>
+				<li class="ka">
+					<a class="cjx27">* 短信验证码</a>
+					<input type="text" placeholder="" value>
+					<a href="#" class="zz">
+						<h3 class="kan">获取</h3>
+					</a>
+					<p class="cjx28" style="display: none;"></p>
+				</li>
+				<li class="cjx26">
+					<a class="cjx27">电子邮箱</a>
+					<input type="text" placeholder="请输入您的电子邮箱" value>
+					<p class="cjx28" style="display: none;"></p>
+				</li>
+				<li class="cjx26">
+					<a class="cjx27">微信</a>
+					<input type="text" placeholder="请输入您的微信号" value>
+					<p class="cjx28" style="display: none;"></p>
+				</li>
+				<li class="cjx29">
+					<input type="checkbox" name="interest" value="cjx30" class="cjx30">
+					<label for="checkbox" class="cjx31">* 同意富游客服尽快与您电话联系沟通定制行程</label>
+				</li>
+			</ul>
+		</div>
+		<div class="cjx32">
+			<a href="register.html">
+				<p class="cjx33">提交</p>
+		</div>
+		<div class="cjx34">
+			<ul class="cjx35">
+				<li class="cjx36"><a href="./destination.html">机酒自由行</a></li>
+				<li class="cjx36"><a href="./local.html">当地玩乐</a></li>
+				<li class="cjx36"><a href="./register.html">优惠机票</a></li>
+				<li class="cjx36"><a href="./visa.html">签证</a></li>
+				<li class="cjx36"><a href="./register.html">马尔代夫</a></li>
+				<li class="cjx36"><a href="./drive.html">邮轮</a></li>
+				<li class="cjx36"><a href="./drive.html">租车自驾</a></li>
+				<li class="cjx36"><a href="./drive.html">深度旅行</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 结尾 -->
+
+	<footer>
+		<div class="footer">
+			<p class="jj">
+				<a href="#"><span>|&nbsp;&nbsp;富游简介</span></a>
+				<a href="./drive.html"><span>|&nbsp;&nbsp;合作伙伴</span></a>
+				<a href="./drive.html"><span>|&nbsp;&nbsp;加入我们</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;新手上路</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;使用帮助</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;网站地图</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;会员条款</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;社区指南</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;版权声明</span></a>
+				<a href="#"><span>|&nbsp;&nbsp;免责声明</span></a>
+			</p>
+			<br />
+			<p>
+				<a>2004-2022©富游网® qyer.com All rights reserved. Version v5.57 京I <img src="./img/7009.png" alt="">
+					京公网安备11010502041090 京ICP证140673号营业执照经营许可证</a>
+			</p>
+		</div>
+	</footer>
+	<!-- 结尾 -->
+</body>
+
+</html>

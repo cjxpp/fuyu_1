@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_3036624_2000l15qp8m.css">
+		<link rel="stylesheet" href="./css/public.css">
+		<link rel="shortcut icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_3426322_0bzu5hchnbw8.css">
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_3431750_1tqxlmnq2a1.css">
+		<script src="./js/gradually.js"></script>
+		<style type="text/css">
+			#spot_ul li {
+				width: 75px;
+				height: 30px;
+				border-radius: 29%;
+				background-color: rgba(177, 98, 33, 0.326);
+			}
+
+			#spot_ul .current {
+				border: solid 0.5px rgb(0, 0, 0, 0.1);
+				background-color: rgba(146, 45, 143, 0.1);
+			}
+
+			.focus {
+				height: 550px;
+			}
+
+			.focus .roll img {
+				height: 550px;
+			}
+
+			#fl,
+			#fr {
+				margin-top: 55px;
+			}
+
+			.focus .roan {
+				position: absolute;
+				bottom: 90px;
+				left: 50%;
+				margin-left: -352px;
+				width: 675px;
+				height: 95px;
+				z-index: 2;
+				padding: 10px;
+				background-color: rgb(0, 0, 0, 0.3);
+				border-radius: 10px;
+			}
+
+			.fp li {
+				float: left;
+				margin-left: 16px;
+				height: 30px;
+				color: #fff;
+				font-size: 15px;
+				font-weight: 600;
+			}
+
+			.fp li a {
+				color: #fff;
+				font-family: '微软雅黑';
+			}
+
+			.fp li a:hover {
+				color: rgb(18, 233, 25);
+			}
+
+			.roan input {
+				width: 540px;
+				height: 40px;
+				outline: none;
+				border: solid 1px #fff;
+				background-color: #fff;
+				text-indent: 1em;
+				font-size: 15px;
+				font-family: 700;
+				border-radius: 0px 1px 0px 1px;
+			}
+
+			.roan .nsoptpokll {
+				width: 80px;
+				height: 40px;
+				background-color: rgb(192, 157, 20);
+				margin: 0;
+				padding: 8px 0px 0px 26px;
+				font-size: 14px;
+				font-family: '微软雅黑';
+				font-weight: 600;
+				cursor: pointer;
+				border-radius: 0px 1px 0px 1px;
+			}
+
+			.nsoptpokll:hover {
+				background-color: rgb(245, 148, 4);
+			}
+
+			.aooyi {
+				width: 100%;
+				height: 1415px;
+				margin: 40px 0 0 0;
+			}
+
+			.aooer {
+				width: 1140px;
+				height: 1415px;
+				margin: 0 auto;
+			}
+
+			.bootp {
+				font-size: 28px;
+				font-family: '微软雅黑';
+				text-align: center;
+			}
+
+			.bnpm .aooer .oppo {
+				width: auto;
+				border-top: 1px solid rgb(125, 146, 158);
+				margin: 30px 63px 26px 56px;
+			}
+
+			.aooer .ionopp li {
+				float: left;
+			}
+
+			.ionopp {
+				width: 1130px;
+				height: 630px;
+				margin: 0 auto;
+			}
+
+			.poll {
+				width: 235px;
+				height: 550px;
+				margin-left: 5%;
+			}
+
+			.poll ul li {
+				width: 235px;
+				height: 160px;
+				margin-top: 17px;
+			}
+
+			.pdll {
+				width: 781px;
+				height: 550px;
+				margin-left: 5px;
+			}
+
+			.pdll ul li {
+				width: 230px;
+				height: 250px;
+				background-color: #ffffffeb;
+				margin-left: 25px;
+				margin-top: 17px;
+				border: solid 1px #d8e3eb;
+			}
+			.huan{
+				float: right;
+				margin-right: 50px;
+				width: 80px;
+				height: 35px;
+			}
+			.huan a{
+				color: rgb(23, 145, 23);
+			}
+			.huan a:hover{
+				color: rgb(207, 114, 14);
+			}
+
+			.ionbua {
+				width: 1130px;
+				height: 430px;
+				margin: 0 auto;
+			}
+
+
+			.piodd ul .al {
+				margin-left: 4.5%;
+				width: 500px;
+				height: 270px;
+				position: relative;
+				float: left;
+				background-color: #9d3636f6;
+				overflow: hidden;
+			}
+
+
+
+
+			.piodd ul li .heimt{
+				position: absolute;
+				text-align: center;
+				font-size: 20px;
+				line-height:30px;
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				bottom: 0;
+				right: 0;
+				width: 100%;
+				height: 60px;
+				transition: all 0.1s;
+				color: rgb(247, 239, 239);
+				box-shadow:20px 0px 20px rgb(0, 0, 0, 0.3);
+				background-color:rgb(0,0,0,0.2);
+			}
+			.piodd ul li .heimt p{
+				font-size:15px
+			}
+			.piodd ul li:hover .heimt{
+				width: 500px;
+				height: 0px;
+				transition: all 0.2s;
+				text-align: center;
+			}
+			.piodd ul li .zheyc{
+				position: absolute;
+				text-align: center;
+				font-size: 20px;
+				line-height:30px;
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 0px;
+				overflow: hidden;
+				transition: all 0.1s;
+				color: rgb(247, 239, 239);
+				box-shadow:20px 0px 20px rgb(0, 0, 0, 0.3);
+				background-color:rgb(0,0,0,0.2);
+			}
+			.piodd ul li:hover .zheyc{
+				position: absolute;
+				width: 500px;
+				height: 100%;
+				transition: all 0.2s;
+				text-align: center;
+				overflow: hidden;
+				background-color:rgba(12, 9, 9, 0.5);
+			}
+			.piodd ul li .zheyc .jiioo{
+				width: 120px;
+				height: 50px;
+				margin: 0 auto;
+				border-radius:10%;
+				line-height:47px;
+				margin-top: 60px;
+				transition: all 0.3s;
+				border-bottom: solid 1px rgba(245, 240, 240, 0.953);
+				background-color:rgba(0, 0, 0, 0.1);
+			}
+			.piodd ul li .zheyc .jiioo:hover{
+				background-color:rgba(0, 0, 0, 0.1);
+				transform: translate(1.2s);
+				border-bottom: solid 3px rgba(31, 116, 137, 0.953);
+			}
+			.piodd ul li .zheyc .jiioo{
+				display: block;
+				overflow: hidden;
+			}
+			.piodd ul li .jooii{
+				margin:40px 10px 0 90px;
+				width: 65%;
+				height: 50px;
+				overflow: hidden;
+				line-height:45px;
+				border-bottom: solid 2px rgba(245, 240, 240, 0.953);
+			}
+			.piodd ul li .jooii{
+				display: block;
+				overflow: hidden;
+			}
+
+
+			
+			.piodd ul .bl {
+				margin-left: 1%;
+				width: 250px;
+				height: 270px;
+				float: left;
+				overflow: hidden;
+				background-color: #0d57acf6;
+			}
+
+
+
+
+
+			.piodd ul .cl {
+				margin-left: 1%;
+				width: 250px;
+				height: 270px;
+				overflow: hidden;
+				float: left;
+				background-color: #0d57acf6;
+			}
+			.pioff ul .dl {
+				width: 670px;
+				height: 270px;
+				margin-left: 4.5%;
+				background-color: #ac0d92f6;
+				float: left;
+				margin-top: 1%;
+				overflow: hidden;
+			}
+			.pioff ul .dl img{
+				vertical-align: bottom;
+    			width: 100%;
+				height: 100%;
+			}
+
+			.pioff ul .el {
+				width: 342px;
+				height: 270px;
+				background-color: #870dacf6;
+				float: left;
+				margin-top: 1%;
+				margin-left: 1%;
+				overflow: hidden;
+				
+			}
+			.pioff ul .el img{
+				vertical-align: bottom;
+    			width: 100%;
+				height: 100%;
+			}
+
+			.aoorpp {
+				width: 100%;
+				height: 825px;
+				background-color: rgb(95, 51, 205);
+				margin: 0;
+			}
+
+			.eoupp {
+				width: 1140px;
+				height: 805px;
+				background-color: rgb(12, 223, 216);
+				margin: 0 auto;
+			}
+
+			.cootp {
+				font-size: 28px;
+				font-family: '微软雅黑';
+				text-align: center;
+				padding: 20px;
+			}
+
+			.aoorpp .eoupp .oppo {
+				width: auto;
+				border-top: 1px solid rgb(125, 146, 158);
+				margin: 5px 63px 26px 56px;
+			}
+
+			.puii {
+				width: 1070px;
+				height: 640px;
+				margin: 0 auto;
+			}
+
+			.puii ul li {
+				float: left;
+				width: 310px;
+				height: 290px;
+				margin-left: 33px;
+				margin-bottom: 25px;
+				background-color: rgb(182, 105, 27);
+			}
+
+			.tuyi{
+				background-image: url(img/k098.png);
+				background-size: 100% 100% ;
+				background-repeat: no-repeat;
+				transition: all 0.5s;
+				filter: grayscale(31%);
+				border-radius:2px;
+				box-shadow: 1px 1px 15px rgba(0, 0, 0, .5);
+				box-shadow: 3px 0px 5px rgba(46, 46, 46, 0.4);
+			}
+			.tuyi:hover{
+				filter: drop-shadow(1px 1px 15px rgba(90, 53, 53, 0.5));
+				display: block;
+				border-radius:3px;
+				transition: all 0.4s;
+				margin-bottom:5px;
+				filter: brightness(105%) saturate(120%);
+			}
+			.tuer{
+				background-image: url(img/k097.png);
+				background-size: 100% 100% ;
+				background-repeat: no-repeat;
+				transition: all 0.5s;
+				filter: grayscale(31%);
+				border-radius:2px;
+				box-shadow: 1px 1px 15px rgba(0, 0, 0, .5);
+				box-shadow: 3px 0px 5px rgba(46, 46, 46, 0.4);
+			}
+			.tuer:hover{
+				filter: drop-shadow(1px 1px 15px rgba(90, 53, 53, 0.5));
+				display: block;
+				border-radius:3px;
+				transition: all 0.4s;
+				margin-top:14px;
+				filter: brightness(105%) saturate(120%);
+			}
+			.tusan{
+				background-image: url(img/k096.png);
+				background-size: 100% 100% ;
+				background-repeat: no-repeat;
+				transition: all 0.5s;
+				filter: grayscale(31%);
+				border-radius:2px;
+				box-shadow: 1px 1px 15px rgba(0, 0, 0, .5);
+				box-shadow: 3px 0px 5px rgba(46, 46, 46, 0.4);
+			}
+			.tusan:hover{
+				filter: drop-shadow(1px 1px 15px rgba(90, 53, 53, 0.5));
+				display: block;
+				border-radius:3px;
+				transition: all 0.4s;
+				margin-top:14px;
+				filter: brightness(105%) saturate(120%);
+			}
+			.poll ul li .day {
+				background-color: #1c2228;
+				position: absolute;
+				bottom: 0px;
+				width: 235px;
+				height: 0px;
+				transition: all 0.3s;
+				border-radius:3px;
+				overflow: hidden;
+				text-align: center;
+				font-size: 15px;
+				line-height:35px;
+				font-weight: 500;
+				font-family: 'Times New Roman', Times, serif;
+				color: #ffffff;
+			}
+
+			.poll ul li:hover .day {
+				text-align: center;
+				width: 235px;
+				height: 39px;
+				right: 0px;
+				bottom: 0px;
+				background-color: rgb(0, 0, 0, 0.35);
+				border-radius:3px;
+				overflow: hidden;
+			}
+	
+			.pdll ul li{
+				position: relative;
+				transition: all 0.5s;
+			}
+			.pdll ul li:hover{
+				box-shadow: 0px 0px 20px rgba(176, 83, 21, 0.6);
+			}
+			.pdll ul li img {
+				vertical-align: bottom;
+    			width: 100%;
+				height: 66%;
+				transition: all 0.5s;
+			}
+			.pdll ul li img:hover{
+				vertical-align: bottom;
+    			width: 100%;
+				height: 63%;
+				transition: all 0.5s;
+			}
+			.pdll ul li div {
+				width: 78px;
+    			height: 25px;
+				background-image: url(img/k034.png) -34px -38px;
+				position: absolute;
+				border-radius:17px;
+				background-color: rgb(0, 0, 0, 0.25);
+				background-repeat: no-repeat;
+				left: 8px;
+				bottom: 98px;
+				font-size: 8px;
+				color: #fff;
+				text-align: center;
+				line-height: 24px;
+			}
+			.pdll ul li div i{
+				width: 17px;
+				height: 15px;
+				margin-right: 3px;
+				display: inline-block;
+				background-image: url(./img/k034.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				vertical-align: -2%;
+			}
+			.pdll ul li div:hover{
+				background-color: rgb(0, 0, 0, 0.35);
+			}
+			.pdll ul li .dinwei{
+				width: 78px;
+    			height: 25px;
+				background-image: url(img/k034.png) -34px -38px;
+				position: absolute;
+				border-radius:17px;
+				background-color: rgb(0, 0, 0, 0.25);
+				background-repeat: no-repeat;
+				left: 8px;
+				bottom: 98px;
+				font-size: 8px;
+				color: #fff;
+				text-align: center;
+				line-height: 24px;
+			}
+			.pdll ul li .dinwei i{
+				width: 18px;
+				margin: 2px 0 0 0;
+				margin-right: 3px;
+				display: inline-block;
+				background: url(img/k034.png) no-repeat;
+				background-position: 0 0;
+				background-position: 0 -48px;
+			}
+			.pdll ul li p{
+				color: #333;
+				font-size: 16px;
+				font-family: '微软雅黑';
+				margin: 6px 2px 0px 14px;
+    			overflow: hidden;
+			}
+			.pdll ul li .pyyi{
+				margin: 3px 2px 0px 14px;
+				color: rgb(145, 139, 139);
+				font-family: '微软雅黑';
+			}
+			.pdll ul li .byyi{
+				color: rgb(24, 200, 144);
+				font-size: 12px;
+				font-weight: 700;
+				font-family: '黑体';
+				width: 213px;
+			}
+			.pdll ul li .byyi img {
+				width: 25px;
+    			height: 25px;
+    			border-radius: 50%;
+    			margin-right: 6px;
+    			vertical-align: middle;
+			}
+			.pdll ul li .iconfont{
+				position: absolute;
+				margin-top:4px ;
+				margin-left: 20px;
+				color: rgb(180, 173, 173);
+			}
+			.pdll ul li .ziti{
+				position: absolute;
+				margin-top:5px ;
+				font-size: 10px;
+				margin-left: 40px;
+				font-weight: 600;
+				color: rgb(206, 200, 200);
+			}
+			.pdll ul li .puo{
+				position: absolute;
+				margin-top:4px ;
+				margin-left: 43px;
+				color: rgb(180, 173, 173);
+			}
+			.pdll ul li .zitio{
+				position: absolute;
+				margin-top:5px ;
+				font-size: 10px;
+				margin-left: 63px;
+				font-weight: 600;
+				color: rgb(206, 200, 200);
+			}
+			.pdll ul li .loe{
+				color: rgb(206, 200, 200);
+				font-size: 13px;
+			}
+			.pdll ul li .loe span{
+				color: rgb(67, 206, 16);
+				font-weight: 700;
+				font-size: 14px;
+			}
+			.pdll ul li .bou{
+				position: absolute;
+				margin-top:2px;
+				margin-left: 60px;
+				color: rgb(180, 173, 173);
+			}
+			.pdll ul li .zitip{
+				position: absolute;
+				margin-top:2px ;
+				font-size: 10px;
+				margin-left: 78px;
+				font-weight: 600;
+				color: rgb(206, 200, 200);
+			}
+			.pdll ul li .day{
+				background-color: #0c1318;
+				position: absolute;
+				bottom: 0px;
+				left: 0;
+				width: 230px;
+				height: 0px;
+				transition: all 0.4s;
+				overflow: hidden;
+				text-align: center;
+				font-size: 14px;
+				font-weight: 500;
+				color: #ffffff;
+			}
+
+			.pdll ul li:hover .day {
+				text-align: center;
+				width: 230px;
+				height: 83px;
+				right: 0px;
+				bottom: 0px;
+				background-color: rgb(0, 0, 0, 0.4);
+				overflow: hidden;
+			}
+
+
+
+			.gengdo{
+				float: right;
+				width: 130px;
+				margin-top: 15px;
+				margin-right: 75px;
+			}
+			.gengdo a{
+				color: rgb(23, 145, 23);
+			}
+			.gengdo a:hover{
+				color: rgb(207, 114, 14);
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<div class="nav">
+				<ul class="fl">
+					<li><a href="./index.html"><img src="./img/k001.png" alt=""></a></li>
+					<li><a href="./destination.html">目的地</a></li>
+					<li><a href="./hotel.html">特价酒店</a></li>
+					<li><a href="./local.html">当地玩乐</a></li>
+					<li><a href="./customized.html">私人定制</a></li>
+					<li><a href="./drive.html">租车自驾</a></li>
+					<li class="pull_down"><a href="./visa.html">富游商城 <i
+								class="iconfont icon-tx-fill-sanjiaoxing-copy"></i></a>
+						<dl>
+							<a href="./railway.html">
+								<dt><i class="iconfont icon-qiche"></i>铁路</dt>
+							</a>
+							<a href="./visa.html">
+								<dd><i class="iconfont icon-qianzheng"></i>签证</dd>
+							</a>
+							<a href="./forum.html">
+								<dd><i class="iconfont icon-dangdiwanle1"></i>社区</dd>
+							</a>
+							<a href="./wedding.html">
+								<dd><i class="iconfont icon-hunsha"></i>婚纱旅拍</dd>
+							</a>
+							<a href="./strategy.html">
+								<dd><i class="iconfont icon-gonglve"></i>攻略</dd>
+							</a>
+						</dl>
+					</li>
+				</ul>
+				<ul class="fr">
+					<ul>
+						<li>
+							<a href="./silk_bag.html"><i class="iconfont icon-changyongtubiao_yonghusousuo"></a></i>
+							<input type="text" placeholder="土耳其">
+						</li>
+						<li><a href="https://login.taobao.com/"><i class="iconfont icon-taobao"></i></a></li>
+						<li><a href="https://uni.mp.qq.com/login?url=https%3A%2F%2Funi.mp.qq.com%2F"><i
+									class="iconfont icon-QQ"></i></a></li>
+						<li><a href="https://wx.qq.com/"><i class="iconfont icon-weixin"></i></a></li>
+						<li><a
+								href="https://login.sina.com.cn/signup/signin.php?r=https%3A%2F%2Fapi.weibo.com%2Foauth2%2Fauthorize%3Ftime%3D1648974148157%26sign%3Db7b9d8d098a9a397f0eea918f797643d%26client_id%3D1118290340%26redirect_uri%3Dhttp%253A%252F%252Flogin.qyer.com%252Flogin.php%253Faction%253Dweibo%26response_type%3Dcode%26refer%3Dwww.qyer.com%26state%3DPASSPORT000062495943e0654%26display%3Ddefault%26ismobile%3D0%26with_offical_account%3D1"><i
+									class="iconfont icon-xinlangweibo"></i></a></li>
+						<li><a href="./login.html">登录</a></li>
+						<li><a href="./register.html">注册</a></li>
+					</ul>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="focus">
+			<p class="fl iconfont icon-jinrujiantou-copy" id="fl"></p>
+			<p class="fr iconfont icon-jinrujiantou" id="fr"></p>
+			<div class="roll" id="roll">
+				<img src="./img/k035.png" alt="" id="img">
+				<img src="./img/k036.jpeg" alt="" id="img">
+				<img src="./img/k037.png" alt="" id="img">
+				<img src="./img/k099.png" alt="" id="img">
+			</div>
+			<span class="roan">
+				<p class="nanp">
+				<ul class="fp">
+					<li>热搜 :</li>
+					<li><a href="javascript:;">三亚</a></li>
+					<li><a href="javascript:;">泰国</a></li>
+					<li><a href="javascript:;">日本</a></li>
+					<li><a href="javascript:;">云南</a></li>
+					<li><a href="javascript:;">厦门</a></li>
+					<li><a href="javascript:;">成都</a></li>
+					<li><a href="javascript:;">台湾</a></li>
+					<li><a href="javascript:;">北京</a></li>
+					<li><a href="javascript:;">普吉</a></li>
+					<li><a href="javascript:;">马尔代夫</a></li>
+					<li><a href="javascript:;">越南</a></li>
+					<li><a href="javascript:;">香港</a></li>
+					<li class="nenp"><input type="text" aria-label="输入目的地/景点" placeholder="输入目的地 / 景点"></li>
+					<li class="nsoptpokll">搜索</li>
+				</ul>
+				</p>
+			</span>
+			<div class="spot">
+				<ul id="spot_ul" style="width:80px; height: 380px; margin-right:160px; margin-bottom: -150px;">
+				</ul>
+			</div>
+		</div>
+		<!-- 版心 -->
+
+		<div class="aooyi bnpm">
+			<div class="aooer">
+				<!-- 内容 -->
+				<!-- 第一板块 -->
+				<p class="bootp">推荐攻略</p>
+				<div class="oppo"></div>
+				<ul class="ionopp">
+					<li class="poll">
+						<ul>
+							<a href="javascript:;"><li class="tuyi">
+							<span class="day">迪士尼浪漫夜晚狂欢</span>
+							</li></a>
+							<a href="javascript:;"><li class="tuer">
+							<span class="day">刺激过山车</span>
+							</li></a>
+							<a href="javascript:;"><li class="tusan">
+							<span class="day">超好玩游乐园</span>
+							</li></a>
+						</ul>
+					</li>
+					<li class="pdll">
+						<ul>
+							<li><a href="javascript:;"><img src="./img/k089.jpg" alt=""><div><i></i>游记</div></a>
+								<p>2018厦门亲子游四天三夜攻略！夜宿鼓浪屿、寻觅厦门...</p>
+								<p class="byyi"><img src="./img/k079.jpeg" alt="">飞翔的侠宝宝
+								<i class="iconfont icon-liulan"></i><i class="ziti">14377人浏览</i></p>
+								<span class="day">旅游攻略_攻略首页, 推荐攻略_1_游记_2022厦门亲子游四天三夜攻略！夜宿鼓浪屿、寻觅厦门地道美食</span></li>
+
+							<li><a href="javascript:;"><img src="./img/k088.png" alt=""><div class="dinwei"><i></i>目的地</div></a>
+								<p>杭州</p> <span class="pyyi">去西湖边品杭帮菜吧</span>
+								<p class="loe">位于 <span>浙江</span>
+								<i class="iconfont icon-liulan bou"></i><i class="zitip">45997人浏览</i></p>
+								<span class="day">旅游攻略_攻略首页, 推荐攻略_2_目的地_杭州去西湖边品杭帮菜吧</span></li>
+
+							<li><a href="javascript:;"><img src="./img/k087.jpg" alt=""><div><i></i>游记</div></a>
+								<p>富游首发 | 夏日玩水，三亚水上乐园，人造3米海啸，...</p>
+								<p class="byyi"><img src="./img/k078.jpg" alt="">小豆学长
+								<i class="iconfont icon-liulan puo"></i><i class="zitio">16847人浏览</i></p>
+								<span class="day">旅游攻略_攻略首页, 推荐攻略_3_游记_富游首发 | 夏日玩水，三亚水上乐园，人造3米海啸，刺激一夏</span></li>
+
+							<li><a href="javascript:;"><img src="./img/k086.jpg" alt=""><div class="dinwei"><i></i>目的地</div></a>
+								<p>国庆初遇欧洲，一价全含，拒签全退，瑞士雪山...</p>
+								<p class="loe">位于 <span>欧洲</span><i class="iconfont icon-liulan bou"></i><i class="zitip">19834人浏览</i></p>
+								<span class="day">旅游攻略_攻略首页, 推荐攻略_4_特价线路_国庆初遇欧洲，一价全含，拒签全退，瑞士雪山，双宫双游船，特色小镇</span></li>
+
+							<li><a href="javascript:;"><img src="./img/k085.jpg" alt=""><div><i></i>游记</div></a>
+								<p>#鸿运必胜# 猫猫走神州 厦门、鼓浪屿 六日...</p>
+								<p class="byyi"><img src="./img/k077.jpg" alt="">大鼓肚猫
+								<i class="iconfont icon-liulan puo"></i><i class="zitio">35847人浏览</i></p>
+								<span class="day">旅游攻略_攻略首页, 推荐攻略_5_游记_#鸿运必胜# 猫猫走神州 厦门、鼓浪屿 六日逛吃的日子</span></li>
+
+							<li><a href="javascript:;"><img src="./img/k084.jpg" alt=""><div class="dinwei"><i></i>目的地</div></a>
+								<p>瑞士</p><span class="pyyi">多姿多彩的世界公园</span>
+								<p class="loe">位于 <span>欧洲</span><i class="iconfont icon-liulan bou"></i><i class="zitip">23589人浏览</i></p>
+								<span class="day">旅游攻略_攻略首页', '推荐攻略_6_目的地_瑞士多姿多彩的世界公园</span></li>
+								
+						</ul>
+						
+					</li>
+					<p class="huan"><a href="javascript:;">换一换</a></p>
+				</ul>
+				<!-- 第一板块 -->
+
+				<!-- 第二板块 -->
+				<p class="bootp">达人玩法</p>
+				<div class="oppo"></div>
+
+				<ul class="ionbua">
+					<li class="piodd">
+						<ul>
+							<li class="al"><a href="javascript:;"><img src="./img/k069.jpg" alt="">
+								<div class="heimt">奶爸萌娃“大闹”南京明孝陵，亲子游应该这么玩
+									<p>说起南京明孝陵，大家应该都不陌生。梅花园外接桃花...</p></div>
+								<div class="zheyc"><span class="jooii">奶爸萌娃“大闹”南京明孝陵，亲子游</span>
+								<span class="jiioo">立即预选</span></div>
+								</a>
+							</li>
+							<li class="bl"><img src="./img/k068.jpg" alt="">
+							</li>
+							<li class="cl"><img src="./img/k067.jpg" alt="">
+							</li>
+						</ul>
+					</li>
+					<li class="pioff">
+						<ul>
+							<li  class="dl"><img src="./img/k063.jfif" alt="">
+							</li>
+							<li  class="el"><img src="./img/k065.jpg" alt="">
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- 第二板块 -->
+				<p class="gengdo"><a href="javascript:;">查看更多达人玩法</a></p>
+			</div>
+		</div>
+
+		<!-- 第三板块 -->
+		<div class="aoorpp">
+			<div class="eoupp">
+				<p class="cootp">游记和榜单</p>
+				<div class="oppo"></div>
+				<ul class="puii">
+					<li class="">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 第三板块 -->
+	</body>
+
+</html>

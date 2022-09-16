@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3036624_2000l15qp8m.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_3426322_0bzu5hchnbw8.css">
+    <link rel="shortcut icon" href="./img/bitbug_favicon.ico" type="image/x-icon">
+    <title>【富游网】登录富游</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+        body {
+            background: url(./img/6001.jpg) no-repeat;
+            background-size: 100% 100vh;
+        }
+        .dli_al {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        /*手机实名制颜色*/
+        .id_x a {
+            text-decoration: none;
+            color: rgb(97, 206, 146);
+        }
+
+        /*当鼠标滑过时手机实名制变色*/
+        .id_x :hover {
+            border-bottom: 1px solid rgb(97, 206, 146);
+        }
+
+        /*包含登录页面*/
+        .folot {
+            margin: 200px auto;
+            width: 600px;
+            height: 420px;
+            background-color: aliceblue;
+        }
+
+        .dle_al {
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            margin: 30px 30px;
+        }
+
+        .waibao {
+            float: left;
+            margin: 0px 15px;
+        }
+
+        /*手机实名制的上下高度*/
+        #kol_l {
+            margin: 5px 0px;
+            font-size: 12px;
+        }
+
+        /*手机号/邮箱*/
+        .input-box {
+            margin: 15px 0px;
+            width: 300px;
+            height: 30px;
+            color: rgb(184, 192, 199);
+            border-color: rgb(6, 243, 243);
+            border-radius: 15px;
+            padding: 0px 10px;
+        }
+
+        /*密码*/
+        .input-boa {
+            margin: 15px 0px;
+            width: 300px;
+            height: 30px;
+            color: rgb(184, 199, 194);
+            border-color: rgb(6, 243, 243);
+            border-radius: 15px;
+            padding: 0px 10px;
+        }
+
+        /*忘记密码*/
+        .wjma_v a {
+            text-decoration: none;
+            color: rgb(93, 95, 95);
+            font-size: 12px;
+        }
+
+        /*忘记密码*/
+        .wjma_v a:hover {
+            color: rgb(17, 161, 101);
+        }
+
+        .wjma_v {
+            width: auto;
+            height: 15px;
+            margin-left: 85%;
+        }
+
+        /*登录按钮*/
+        .dlu_li {
+            width: 320px;
+            height: 30px;
+            line-height: 30px;
+            color: aliceblue;
+            background-color: rgb(13, 141, 98);
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .dlu_li:hover {
+            background-color: rgb(41, 155, 89);
+        }
+
+        /*微信淘宝四个图标*/
+        .ausa_a {
+            width: 320px;
+            height: 50px;
+
+            margin-top: 15px;
+        }
+
+        /*QQ*/
+        .wi_a {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 10px 0px 15px 35px;
+            float: left;
+        }
+
+        .wi_a:hover {
+            background-color: rgb(10, 187, 241);
+        }
+
+        /*qq图标*/
+        .wi_a img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /*微信*/
+        .wi_aj {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 10px 0px 15px 35px;
+            float: left;
+        }
+
+        .wi_aj:hover {
+            background-color: rgb(15, 228, 96);
+        }
+
+        .wi_aj img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /*微博*/
+        .wi_ask {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 10px 0px 15px 35px;
+            float: left;
+        }
+
+        .wi_ask:hover {
+            background-color: rgb(207, 54, 54);
+        }
+
+        /*微博图片*/
+        .wi_ask img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /*淘宝*/
+        .wi_aks {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 10px 0px 15px 35px;
+            float: left;
+        }
+
+        .wi_aks:hover {
+            background-color: rgb(255, 123, 0);
+        }
+
+        /*淘宝图片*/
+        .wi_aks img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .asd_c {
+            width: 320px;
+            height: auto;
+            background-color: antiquewhites;
+            float: left;
+            font-size: 12px;
+        }
+
+        /*立即注册*/
+        .asd_c a {
+            text-decoration: none;
+            color: rgb(45, 238, 142);
+        }
+
+        /*立即注册*/
+        .asd_c a:hover {
+            border-bottom: 1px solid rgb(45, 238, 142);
+        }
+
+        /*境外手机号登录盒子*/
+        .asdaa {
+            margin-left: 230px;
+            margin-top: -15px;
+        }
+
+        /*境外手机号登录*/
+        .asdaa a {
+            color: rgb(128, 132, 136);
+
+        }
+
+        .asdaa a:hover {
+            color: rgb(45, 238, 142);
+            border: none;
+        }
+
+        .hezi img {
+            float: left;
+            width: 220px;
+            height: 420px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dli_al">
+        <div class="folot">
+            <div class="waibao">
+                <div class="dle_al">账号登陆</div>
+                <div id="kol_l">关于富游网实行<span class="id_x"><a href="#">手机实名制的说明</a></span></div>
+                <div id="kuan_j">
+                    <input type="text" class="input-box" placeholder="手机号/邮箱/用户名">
+                </div>
+                <div><input type="password" class="input-boa" placeholder="密码"></div>
+                <span class="wjma_v"><a href="#">忘记密码</a></span>
+                <a href="./index.html"><div class="dlu_li">登录</div></a>
+                <div class="ausa_a">
+                    <div class="wi_a"><img src="./img/9018.png"></div>
+                    <div class="wi_aj"><img src="./img/9048.png"></div>
+                    <div class="wi_ask"><img src="./img/9047.png"></div>
+                    <div class="wi_aks"><img src="./img/9045.png"></div>
+                </div>
+                <div class="asd_c">
+                    没有富游账号？<a href="./register.html">立即注册</a>
+                    <div class="asdaa"><a href="#">境外手机号登录</a></div>
+                </div>
+            </div>
+            <div class="hezi">
+                <img src="./img/9017.png">
+            </div>
+        </div>
+        <!--扫码-->
+    </div>
+</body>
+
+</html>

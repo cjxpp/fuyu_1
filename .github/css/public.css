@@ -1,0 +1,767 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+  border: 0;
+}
+em,
+i {
+    font-style: normal
+}
+
+/* 轮播图 */
+.focus {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+}
+
+.focus .roll {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.focus .roll img {
+  position: absolute;
+  width: 100%;
+  height: 420px;
+}
+.focus .roll img:nth-child(1) {
+  opacity: 1;
+}
+.focus .roll img:nth-of-type(n+2) {
+  opacity: 0;
+}
+.focus p {
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  line-height: 420px;
+  color: rgba(255, 255, 255, 0.728);
+  cursor: pointer;
+  transition: .7s;
+  font-size: 80px;
+}
+
+.focus .fl {
+  /* 图层置顶 */
+  z-index: 1;
+  top: 0;
+  left: -100px;
+  border-radius: 0 50% 50% 0;
+}
+
+.focus .fr {
+  z-index: 1;
+  top: 0;
+  right: -100px;
+  border-radius: 50% 0 0 50%;
+}
+
+.focus:hover .fl {
+  left: 0;
+  background-color: #0e0e0e0e;
+}
+
+.focus:hover .fr {
+  right: 0;
+  background-color: #0e0e0e0e;
+}
+
+.focus .spot {
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+  width: 350px;
+  height: 30px;
+  z-index: 99999;
+}
+
+.focus .spot ul {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 100%;
+  height: 50px;
+}
+
+#spot_ul li {
+  float: left;
+  background-color: #8da49e;
+  margin: 8px 8px;
+  width: 40px;
+  height: 10px;
+  cursor: pointer;
+  background-color: #dfe2df;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+#spot_ul .current {
+  background-color: #00b081;
+}
+
+.focus #spot ul li:hover {
+  width: 50px;
+  background-color: #5ad6b5;
+}
+
+.icon-jinrujiantou-copy {
+  font-size: 80px;
+}
+
+.icon-jinrujiantou {
+  font-size: 80px;
+}
+/* 轮播图 */
+
+/* 开头 */
+.nav {
+  padding: 0 30px;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #323232;
+  z-index: 999;
+}
+.nav a:hover {
+  color: #13af7e;
+}
+
+.nav img {
+  width: 80px;
+  height: 35px;
+}
+.nav ul li {
+  position: relative;
+  float: left;
+  margin: 0 10px;
+  font-size: 18px;
+}
+.nav ul li a {
+  font-weight: bold;
+  color: white;
+}
+
+.nav .fl .pull_down {
+  position: relative;
+  height: 60px !important;
+}
+.nav .fl .pull_down .icon-tx-fill-sanjiaoxing-copy {
+  display: inline-block;
+  transform: translateY(-2.5px) rotate(180deg);
+  font-size: 12px;
+  transition: .2s;
+}
+.nav .fl .pull_down:hover .icon-tx-fill-sanjiaoxing-copy{
+  transform: translateY(-2.5px) rotate(0deg);
+}
+.nav .fl .pull_down dl {
+  position: absolute;
+  left: -25px;
+  top: 60px;
+  width: 130px;
+  height: 0;
+  z-index: 5;
+  border-radius: 5px;
+  font-size: 12px;
+  background-color: #f8f8f8f6;
+  overflow: hidden;
+  transition: .3s;
+  box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.224);
+}
+.nav .fl .pull_down:hover dl {
+  height: 215px;
+}
+.nav .fl .pull_down dl dd:hover {
+  background-color: #e3fae1;
+}
+.nav .fl .pull_down dl dt:hover {
+  background-color: #e3fae1;
+}
+.nav .fl .pull_down dl>a {
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 14px;
+  color: #7b7b7b;
+}
+
+.nav .fl .pull_down dl i {
+  display: inline-block;
+  width: 20px;
+  text-indent: .5em;
+  vertical-align: middle;
+  margin-right: 20px;
+  font-size: 20px;
+  color: #13af7e;
+}
+.nav .fr {
+  float: right;
+  height: 60px;
+  overflow: hidden;
+}
+.nav .fr li {
+  position: relative;
+  margin: 0 10px;
+}
+.nav .fr .iconfont {
+  line-height: 60px;
+  font-size: 20px;
+}
+.nav .fr li:nth-child(1) .iconfont {
+  line-height: 62px;
+}
+.nav .fr li:nth-child(1) {
+  width: 230px;
+  overflow: hidden;
+}
+.nav .fr li:nth-child(1) i {
+  float: right;
+}
+.nav .fr li:nth-child(1) input{
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: white;
+  transition: .3s;
+  border: 0;
+  outline: none;
+  text-indent: 1em;
+}
+.nav .fr li:nth-child(1):hover input{
+  width: 200px;
+}
+
+.nav .fr li .icon-taobao:hover {
+  color: #ff5f00 !important;
+}
+.nav .fr li .icon-QQ:hover {
+  color: #1296db !important;
+}
+.nav .fr li .icon-xinlangweibo:hover {
+  color: #e32529 !important;
+}
+.nav .fr li .icon-xinlangweibo {
+  font-size: 16px;
+}
+.nav .fr li:nth-of-type(n+6) {
+  font-size: 16px;
+}
+/* 开头 */
+
+/* 搜索 */
+.core {
+  position: relative;
+  margin: auto;
+  width: 1500px;
+  height: 70px;
+}
+.search {
+  position: relative;
+  padding: 0 170px;
+  height: 100%;
+}
+
+.search h1 {
+  position: absolute;
+  left: 170px;
+}
+.search h1 a {
+  color: #13af7e;
+  line-height: 70px;
+}
+.search .ss {
+  position: absolute;
+  left: 370px;
+  top: 18px;
+  width: 450px;
+  height: 35px;
+}
+.search div input {
+  border-radius: 5px 0 0 5px;
+  float: left;
+  width: 90%;
+  height: 35px;
+  border: 1px solid #13af7e;
+  outline: none;
+  padding-left: 10px;
+}
+
+.search div button {
+  float: right;
+  width: 10%;
+  height: 35px;
+  background-color: #13af7e;
+  border: 1px solid #13af7e;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.search div button i {
+  color: white;
+}
+.search .see {
+  position: absolute;
+  bottom: 0;
+  right: 170px;
+}
+.search .see p {
+  float: left;
+  margin-right: 30px;
+  line-height: 70px;
+}
+.search .see p:last-child {
+  margin: 0;
+}
+.search .see p a {
+  color: #00b081;
+  font-size: 16px;
+}
+/* 搜索 */
+
+/* 结尾 */
+.footer {
+  margin-top: 30px;
+  padding-top: 30px;
+  width: 100%;
+  height: 120px;
+  background-color: #323232;
+  text-align: center;
+}
+.footer p {
+  margin: auto;
+  width: 1500px;
+}
+.jj a {
+  margin: 0 2px;
+  color: #c0c0c0;
+  font: bold 14px '微软雅黑';
+}
+.footer p:last-child a {
+  font-size: 12px;
+  color: #c0c0c0;
+}
+
+
+/* 搜索隐藏 */
+.biao {
+  position: absolute;
+  left: 340px;
+  top: 57px;
+  z-index: 9999;
+  width: 500px;
+  height: 411px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.bie {
+  width: 450px;
+  height: 74px;
+  background-color: #ffffff;
+  float: left;
+  margin: 12px 0px 0px 24px;
+  color: #999;
+  font-size: 12px;
+  line-height: 27px
+}
+
+.op {
+  color: #999;
+  float: right;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.bie ul {
+  display: block;
+  padding-bottom: 18px px;
+}
+
+.bie ul a {
+  color: #000;
+}
+
+.bie ul a:hover {
+  color: #00b081;
+}
+
+/* 表格面板 */
+.disan {
+  float: left;
+  width: 450px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  margin: 0px 0px 0px 24px;
+}
+
+.disan h2 {
+  font-size: 16px;
+  line-height: 16px;
+  padding-bottom: 12px;
+  color: #999;
+  display: block;
+}
+
+
+.disige ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.disige a {
+  color: #000;
+  font-size: 10px;
+}
+
+.disige ul {
+  width: 450px;
+  height: 25px;
+}
+
+.disige ul li:first-child {
+  margin-right: 15px;
+}
+
+.disige ul a:hover {
+  color: #02db94;
+}
+
+.mo {
+  color: #000;
+  font-weight: bold;
+}
+
+.op1 {
+  color: crimson;
+}
+
+/* 表格的第二个列表 */
+.diwuge ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.diwuge a {
+  color: #000;
+  font-size: 10px;
+}
+
+.diwuge ul {
+  width: 450px;
+  height: 25px;
+}
+
+.diwuge ul li:first-child {
+  margin-right: 15px;
+}
+
+.diwuge ul a:hover {
+  color: #02db94;
+}
+
+.mo1 {
+  color: #000;
+  font-weight: bold;
+}
+
+.op1 {
+  color: crimson;
+}
+
+/* 第三个表格 */
+.diliuge ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.diliuge a {
+  color: #000;
+  font-size: 10px;
+}
+
+.diliuge ul {
+  width: 500px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.diliuge ul li:first-child {
+  margin-right: 15px;
+}
+
+.diliuge ul a:hover {
+  color: #02db94;
+}
+
+.mo2 {
+  color: #000;
+  font-weight: bold;
+}
+
+.op1 {
+  color: crimson;
+}
+
+/* 第四个表格 */
+.diqige {
+  position: relative;
+  left: 48px;
+}
+
+.diqige ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.diqige a {
+  color: #000;
+  font-size: 10px;
+}
+
+.diqige ul {
+  width: 500px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.diqige ul li:first-child {
+  margin-right: 15px;
+}
+
+.diqige ul a:hover {
+  color: #02db94;
+}
+
+.mo3 {
+  color: #000;
+  font-weight: bold;
+}
+
+.op1 {
+  color: crimson;
+}
+
+.dibage ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.dibage a {
+  color: #000;
+  font-size: 10px;
+}
+
+.dibage ul {
+  width: 500px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.dibage ul li:first-child {
+  margin-right: 15px;
+}
+
+.dibage ul a:hover {
+  color: #02db94;
+}
+
+.mo4 {
+  color: #000;
+  font-weight: bold;
+}
+
+.op1 {
+  color: crimson;
+}
+
+/* 第六个表格 */
+.dijiuge ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.dijiuge a {
+  color: #000;
+  font-size: 10px;
+}
+
+.dijiuge ul {
+  width: 500px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.dijiuge ul li:first-child {
+  margin-right: 15px;
+}
+
+.dijiuge ul a:hover {
+  color: #02db94;
+}
+
+.mo4 {
+  color: #000;
+  font-weight: bold;
+}
+
+.op1 {
+  color: crimson;
+}
+
+/* 第七个表格 */
+.dishige {
+  position: relative;
+  left: 48px;
+}
+
+.dishige ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.dishige a {
+  color: #000;
+  font-size: 10px;
+}
+
+.dishige ul {
+  width: 500px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.dishige ul li:first-child {
+  margin-right: 15px;
+}
+
+.dishige ul a:hover {
+  color: #02db94;
+}
+
+/* 第八个表格 */
+/* .dishiyige {
+  position: relative;
+  left: 48px;
+} */
+
+.dishiyige ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.dishiyige a {
+  color: #000;
+  font-size: 10px;
+}
+
+.dishiyige ul {
+  width: 500px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.dishiyige ul li:first-child {
+  margin-right: 15px;
+}
+
+.dishiyige ul a:hover {
+  color: #02db94;
+}
+
+.dishiyige ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.dishiyige a {
+  color: #000;
+  font-size: 10px;
+}
+
+.dishiyige ul {
+  width: 500px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.dishiyige ul li:first-child {
+  margin-right: 15px;
+}
+
+.dishiyige ul a:hover {
+  color: #02db94;
+}
+
+/* 第十个表格 */
+.dishierge {
+  position: relative;
+  left: 48px;
+}
+
+.dishierge ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.dishierge a {
+  color: #000;
+  font-size: 10px;
+}
+
+.dishierge ul {
+  width: 500px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.dishierge ul li:first-child {
+  margin-right: 15px;
+}
+
+.dishierge ul a:hover {
+  color: #02db94;
+}
+
+/* 第十一个表格 */
+.dishisange ul li {
+  float: left;
+  margin: 0 10px;
+}
+
+.dishisange a {
+  color: #000;
+  font-size: 10px;
+}
+
+.dishisange ul {
+  width: 500px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.dishisange ul li:first-child {
+  margin-right: 15px;
+}
+
+.dishisange ul a:hover {
+  color: #02db94;
+}
+.wu {
+  display: none;
+}
+/* 搜索隐藏 */
